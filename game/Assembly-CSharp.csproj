@@ -64,11 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\04.Script\GameManager.cs" />
-    <Compile Include="Assets\04.Script\GroundScroller.cs" />
-    <Compile Include="Assets\04.Script\Obstacle.cs" />
-    <Compile Include="Assets\04.Script\PlayerController.cs" />
-    <Compile Include="Assets\04.Script\RespawnManager.cs" />
     <Compile Include="Assets\06.Asset\숲배경\Demo\MoveBackground.cs" />
     <None Include="Assets\06.Asset\숲배경\Contact.txt" />
     <None Include="Assets\06.Asset\숲배경\Lisense.txt" />
@@ -622,14 +617,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/171147/Desktop/응애/game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/171147/Desktop/응애/game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/171147/Desktop/응애/game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/171147/Desktop/응애/game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/171147/Desktop/응애/game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

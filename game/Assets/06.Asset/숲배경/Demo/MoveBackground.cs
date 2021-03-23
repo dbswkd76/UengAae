@@ -22,12 +22,12 @@ public class MoveBackground : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (GameManager.instance.isPlay)
-		{
+		
+		
 			x = transform.position.x;
-			x += speed * Time.deltaTime * GameManager.instance.gameSpeed;
+			x += speed * Time.deltaTime;
 			transform.position = new Vector3(x, transform.position.y, transform.position.z);
-		}
+		
 
 
 
