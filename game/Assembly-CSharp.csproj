@@ -65,6 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\04.Script\BackGroundScrolling.cs" />
+    <Compile Include="Assets\04.Script\Obstacle.cs" />
+    <Compile Include="Assets\04.Script\meoheeeTag.cs" />
     <Compile Include="Assets\06.Asset\Bolt 2D DinoRun VE1\ReadMe\Scripts\ReadmeVE1.cs" />
     <None Include="Assets\Ludiq\Ludiq.Core\DotNetDocumentation\System.Web.Extensions.Design.xml" />
     <None Include="Assets\Ludiq\Ludiq.Core\DotNetDocumentation\Microsoft.Build.Engine.xml" />
