@@ -22,23 +22,65 @@ public class GameManager : MonoBehaviour
 
     public float gameSpeed = 1;
     public bool isPlay = false;
-    public GameObject playBtn;
-
-    public void PlayBtnClick()
+    public List<GameObject> Buttons;
+    public GameObject Optionpanel;
+    public bool IsPause;
+    public void Hellopanel()
     {
-        playBtn.SetActive(false);
+        Optionpanel.SetActive(true);
+    }
+
+    public void OnclickEixt()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+        Debug.Log("Button Click");
+#endif
+    }
+    public void Byepanel()
+    {
+        Optionpanel.SetActive(false);
+        Time.timeScale = 1;
+        IsPause = false;
+    }
+    public void PlayBtnClick()
+    {  for (int i = 0; i <= 3; i++)
+      {
+            Buttons[i].SetActive(false);
+            
+      }
         isPlay = true;
         onPlay.Invoke();
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        IsPause = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (IsPause == false)
+            {
+                Time.timeScale = 0;
+                IsPause = true;
+                Hellopanel();
+                return;
+            }
+            if (IsPause == true)
+            {
+                Time.timeScale = 1;
+                IsPause = false;
+                Byepanel();
+                return;
+
+            }
+        }
     }
+
 }
