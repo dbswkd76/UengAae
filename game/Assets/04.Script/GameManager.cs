@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
     #region instance
@@ -25,11 +26,27 @@ public class GameManager : MonoBehaviour
     public List<GameObject> Buttons;
     public GameObject Optionpanel;
     public bool IsPause;
-    public void Hellopanel()
+    public GameObject RoundSelect;
+    public void HelloOption()
     {
         Optionpanel.SetActive(true);
     }
+    public void ByeOption()
+    {
+        Optionpanel.SetActive(false);
+        Time.timeScale = 1;
+        IsPause = false;
+    }
 
+    public void HelloRound()
+    {
+        RoundSelect.SetActive(true);
+    }
+
+    public void ByeRound()
+    {
+        RoundSelect.SetActive(false);
+    }
     public void OnclickEixt()
     {
 #if UNITY_EDITOR
@@ -39,12 +56,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Button Click");
 #endif
     }
-    public void Byepanel()
-    {
-        Optionpanel.SetActive(false);
-        Time.timeScale = 1;
-        IsPause = false;
-    }
+   
     public void PlayBtnClick()
     {  for (int i = 0; i <= 3; i++)
       {
@@ -69,14 +81,14 @@ public class GameManager : MonoBehaviour
             {
                 Time.timeScale = 0;
                 IsPause = true;
-                Hellopanel();
+                HelloOption();
                 return;
             }
             if (IsPause == true)
             {
                 Time.timeScale = 1;
                 IsPause = false;
-                Byepanel();
+                ByeOption();
                 return;
 
             }
