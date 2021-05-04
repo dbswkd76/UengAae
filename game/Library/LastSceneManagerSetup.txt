@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: "Assets/01.Scene/\uC724\uC7A5.unity"
+=======
+- path: Assets/01.Scene/meoheee.unity
+>>>>>>> 대희
   isLoaded: 1
   isActive: 1
   isSubScene: 0
