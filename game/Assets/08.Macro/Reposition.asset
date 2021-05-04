@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Reposition
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-803.0,"y":-167.0},"guid":"eabc0bf7-535e-4e52-a0d4-4a35d3ac4e0c","$version":"A","$type":"Bolt.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-456.0,"y":-146.0},"guid":"872165a9-d84c-4998-8be9-91bc46e0aea0","$version":"A","$type":"Bolt.Update"}],"$version":"A"}}'
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-631.0162,"y":-110.3919},"zoom":0.9,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-853.0,"y":-145.0},"guid":"eabc0bf7-535e-4e52-a0d4-4a35d3ac4e0c","$version":"A","$type":"Bolt.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-518.0,"y":-157.0},"guid":"872165a9-d84c-4998-8be9-91bc46e0aea0","$version":"A","$type":"Bolt.Update"}],"$version":"A"}}'
     _objectReferences: []
