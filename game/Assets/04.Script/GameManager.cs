@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private void Awake()
     {
-        if(instance != null)
+        if (instance != null)
         {
             Destroy(gameObject);
             return;
@@ -56,13 +56,14 @@ public class GameManager : MonoBehaviour
         Debug.Log("Button Click");
 #endif
     }
-   
+
     public void PlayBtnClick()
-    {  for (int i = 0; i <= 3; i++)
-      {
+    {
+        for (int i = 0; i <= 3; i++)
+        {
             Buttons[i].SetActive(false);
-            
-      }
+
+        }
         isPlay = true;
         onPlay.Invoke();
     }

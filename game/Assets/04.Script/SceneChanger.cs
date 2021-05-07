@@ -11,11 +11,11 @@ public class SceneChanger : MonoBehaviour
     public bool isPlay = false;
     public List<GameObject> Buttons;
     public bool IsPause;
- 
+
 
     public void SceneChangeSelectRound()
     {
-            SceneManager.LoadScene("SelectRound");
+        SceneManager.LoadScene("SelectRound");
     }
     // Start is called before the first frame update
 
@@ -50,14 +50,14 @@ public class SceneChanger : MonoBehaviour
 
 
 
-        void Start()
+    void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-     
+
     }
 }
