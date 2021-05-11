@@ -44,7 +44,7 @@ public class meoheeeTag : MonoBehaviour
     public void OnCollisionEnter2D()
     {
         tag_able = true;
-        Debug.Log("점프 안하는 중");
+        Debug.Log("점프ㄴㄴ");
     }
 
     public void OnCollisionExit2D()
