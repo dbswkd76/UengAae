@@ -6,10 +6,13 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
+    public meoheeeTag mht; //머-히태그 추가
+
     Rigidbody2D myrigidbody;
 
     [SerializeField] float power;
     [SerializeField] Transform pos;
+    [SerializeField] Transform bungpimm_pos; //붕핌이도 더블점프!
     [SerializeField] float checkRadius;
     [SerializeField] LayerMask islayer;
 
@@ -17,6 +20,7 @@ public class Jump : MonoBehaviour
     int jumpCnt;
 
     bool isGround;
+    bool bungpimmisGround; //붕핌이도 더블점프!
 
 
     private void Start()
@@ -29,25 +33,22 @@ public class Jump : MonoBehaviour
      void Update()
     {
         isGround = Physics2D.OverlapCircle(pos.position, checkRadius, islayer);
+        bungpimmisGround = Physics2D.OverlapCircle(bungpimm_pos.position, checkRadius, islayer); //붕핌이도 더블점프!
 
         if (isGround == true && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
         {
-            Debug.Log("점프");
-            myrigidbody.velocity = Vector2.up * power;
+            myrigidbody.velocity = Vector2.up * power * mht.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
         }
         if (isGround == false && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
         {
-            Debug.Log("2단점프");
-            myrigidbody.velocity = Vector2.up * power;
+            myrigidbody.velocity = Vector2.up * power * mht.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("점프카운트--");
             jumpCnt--;
         }
-        if (isGround)
+        if (isGround || bungpimmisGround) //붕핌이도 더블점프!
         {
-            Debug.Log("점프카운트++");
             jumpCnt = jumpCount;
         }
     }
