@@ -42,10 +42,12 @@ public class Jump : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("점프카운트--");
             jumpCnt--;
         }
-        if (isGround == true)
+        if (isGround)
         {
+            Debug.Log("점프카운트++");
             jumpCnt = jumpCount;
         }
     }
