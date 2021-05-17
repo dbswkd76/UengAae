@@ -8,7 +8,7 @@ public class meoheeeTag : MonoBehaviour
     public SpriteRenderer bungpimm;
     public AudioSource tag_sound;
     public bool tag_able = true;
-    private bool istag = true;
+    public int istag = 1;
 
     // Update is called once per frame
     void Update()
@@ -20,19 +20,21 @@ public class meoheeeTag : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftAlt) && tag_able == true)
         {
-            if (istag == true)
+            if (istag == 1)
             {
                 pimmbung.enabled = false;
                 bungpimm.enabled = true;
-                istag = false;
+                istag = -1;
                 Debug.Log("붕핌이 달려!!");
+                GetComponent<Rigidbody2D>().gravityScale = -1;
             }
             else
             {
                 pimmbung.enabled = true;
                 bungpimm.enabled = false;
-                istag = true;
+                istag = 1;
                 Debug.Log("핌붕이 달려!!");
+                GetComponent<Rigidbody2D>().gravityScale = 1;
             }
             if (tag_sound != null)
             {
@@ -44,7 +46,7 @@ public class meoheeeTag : MonoBehaviour
     public void OnCollisionEnter2D()
     {
         tag_able = true;
-        Debug.Log("점프 안하는 중");
+        Debug.Log("점프ㄴㄴ");
     }
 
     public void OnCollisionExit2D()
