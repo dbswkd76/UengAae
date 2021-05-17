@@ -47,7 +47,7 @@ public class Jump : MonoBehaviour
         {
             jumpCnt--;
         }
-        if (isGround || bungpimmisGround) //붕핌이도 더블점프!
+        if ((mht.istag==1 && isGround) || (mht.istag==-1 && bungpimmisGround)) //붕핌이도 더블점프!
         {
             jumpCnt = jumpCount;
         }
