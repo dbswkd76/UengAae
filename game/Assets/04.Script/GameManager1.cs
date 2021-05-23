@@ -9,14 +9,15 @@ public class GameManager1 : MonoBehaviour
     public GameObject StartPanel;
     public GameObject Player;
     static public bool playerDie = false;
+    public GameObject music;
     // Start is called before the first frame update
     void Start()
     {
         
     }
     private void Update()
-    {
-       /* if (!DataManager1.Instance.PlayerDie == true)
+    {/*
+        if (!DataManager1.Instance.PlayerDie == true)
         {
             EndPanel.SetActive(false);
         }
@@ -31,11 +32,14 @@ public class GameManager1 : MonoBehaviour
     {
         playerDie = false;
         StartPanel.SetActive(false);
+        EndPanel.SetActive(false);
+        music.SetActive(true);
     }
     public void RestartBtn()
     {
-        DataManager1.Instance.PlayerDie = false;
 
-        SceneManager.LoadScene("SampleScene");
+        playerDie = false;
+        SceneManager.LoadScene("yunjang");
+        
     }
 }

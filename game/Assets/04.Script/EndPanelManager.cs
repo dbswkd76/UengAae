@@ -10,6 +10,7 @@ public class EndPanelManager : MonoBehaviour
     // Start is called before the first frame update
     public void okBtn()
     {
-        SceneManager.LoadScene("SampleScene"); //초기화면 로드
+        SceneManager.LoadScene("윤장"); //초기화면 로드
+        
     }
 }
