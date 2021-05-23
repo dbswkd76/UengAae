@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 430428687}
   - component: {fileID: 430428686}
   - component: {fileID: 430428685}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -688,7 +688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 532986901}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: bungpimm_pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1388,7 +1388,7 @@ GameObject:
   - component: {fileID: 1018868445}
   - component: {fileID: 1018868443}
   - component: {fileID: 1018868444}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: bungpimm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,11 +1442,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e3d556400b0a5248b53a86badcdd6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jump: {fileID: 0}
   pimmbung: {fileID: 2027893359}
   bungpimm: {fileID: 1018868450}
   tag_sound: {fileID: 0}
   tag_able: 1
   istag: 1
+  tag_cnt: 1
 --- !u!114 &1018868445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2236,9 +2238,9 @@ GameObject:
   - component: {fileID: 2027893363}
   - component: {fileID: 2027893362}
   - component: {fileID: 2027893364}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pimmbung
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2511,11 +2513,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e3d556400b0a5248b53a86badcdd6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jump: {fileID: 0}
   pimmbung: {fileID: 2027893359}
   bungpimm: {fileID: 1018868450}
   tag_sound: {fileID: 2027893361}
   tag_able: 1
   istag: 1
+  tag_cnt: 1
 --- !u!1 &2102091462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,7 +2724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2137203669}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
