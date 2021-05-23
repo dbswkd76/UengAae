@@ -18,27 +18,31 @@ public class meoheeeTag : MonoBehaviour
 
     public void Player_Tag()
     {
-        if (Input.GetKeyDown(KeyCode.LeftAlt) && tag_able == true)
+        if (!GameManager1.playerDie)
         {
-            if (istag == 1)
+
+            if (Input.GetKeyDown(KeyCode.LeftAlt) && tag_able == true)
             {
-                pimmbung.enabled = false;
-                bungpimm.enabled = true;
-                istag = -1;
-                Debug.Log("붕핌이 달려!!");
-                GetComponent<Rigidbody2D>().gravityScale = -1;
-            }
-            else
-            {
-                pimmbung.enabled = true;
-                bungpimm.enabled = false;
-                istag = 1;
-                Debug.Log("핌붕이 달려!!");
-                GetComponent<Rigidbody2D>().gravityScale = 1;
-            }
-            if (tag_sound != null)
-            {
-                tag_sound.Play();
+                if (istag == 1)
+                {
+                    pimmbung.enabled = false;
+                    bungpimm.enabled = true;
+                    istag = -1;
+                    Debug.Log("붕핌이 달려!!");
+                    GetComponent<Rigidbody2D>().gravityScale = -1;
+                }
+                else
+                {
+                    pimmbung.enabled = true;
+                    bungpimm.enabled = false;
+                    istag = 1;
+                    Debug.Log("핌붕이 달려!!");
+                    GetComponent<Rigidbody2D>().gravityScale = 1;
+                }
+                if (tag_sound != null)
+                {
+                    tag_sound.Play();
+                }
             }
         }
     }

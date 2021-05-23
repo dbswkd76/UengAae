@@ -20,17 +20,20 @@ public class BackGroundScrolling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i < m_tfBackgrounds.Length; i++)
+        if (!GameManager1.playerDie)
         {
-            m_tfBackgrounds[i].position += new Vector3(m_speed, 0, 0) * Time.deltaTime;
-
-            if (m_tfBackgrounds[i].position.x < m_leftPosX)
+            for (int i = 0; i < m_tfBackgrounds.Length; i++)
             {
-                Vector3 t_selfPos = m_tfBackgrounds[i].position;
-                t_selfPos.Set(t_selfPos.x + m_rightPosX, t_selfPos.y, t_selfPos.z);
-                m_tfBackgrounds[i].position = t_selfPos;
+                m_tfBackgrounds[i].position += new Vector3(m_speed, 0, 0) * Time.deltaTime;
+
+                if (m_tfBackgrounds[i].position.x < m_leftPosX)
+                {
+                    Vector3 t_selfPos = m_tfBackgrounds[i].position;
+                    t_selfPos.Set(t_selfPos.x + m_rightPosX, t_selfPos.y, t_selfPos.z);
+                    m_tfBackgrounds[i].position = t_selfPos;
+                }
             }
+
         }
-        
     }
 }

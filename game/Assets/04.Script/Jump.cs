@@ -6,7 +6,9 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
+    public GameObject EndPanel;
     public meoheeeTag mht; //머-히태그 추가
+    public GameObject music;
 
     Rigidbody2D myrigidbody;
 
@@ -27,29 +29,49 @@ public class Jump : MonoBehaviour
     {
         myrigidbody = GetComponent<Rigidbody2D>();
         jumpCnt = jumpCount;
-        
+
     }
 
-     void Update()
+    void Update()
     {
-        isGround = Physics2D.OverlapCircle(pos.position, checkRadius, islayer);
-        bungpimmisGround = Physics2D.OverlapCircle(bungpimm_pos.position, checkRadius, islayer); //붕핌이도 더블점프!
+        if (!GameManager1.playerDie)
+        {
+            isGround = Physics2D.OverlapCircle(pos.position, checkRadius, islayer);
+            bungpimmisGround = Physics2D.OverlapCircle(bungpimm_pos.position, checkRadius, islayer); //붕핌이도 더블점프!
 
-        if (isGround == true && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
-        {
-            myrigidbody.velocity = Vector2.up * power * mht.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
+            if (isGround == true && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
+            {
+                myrigidbody.velocity = Vector2.up * power * mht.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
+            }
+            if (isGround == false && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
+            {
+                myrigidbody.velocity = Vector2.up * power * mht.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
+            }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                jumpCnt--;
+            }
+            if (isGround || bungpimmisGround) //붕핌이도 더블점프!
+            {
+                jumpCnt = jumpCount;
+            }
         }
-        if (isGround == false && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
+
+        if(DataManager1.Instance.PlayerDie == true)
         {
-            myrigidbody.velocity = Vector2.up * power * mht.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
+            EndPanel.SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.CompareTo("Obstacle") == 0)
         {
-            jumpCnt--;
-        }
-        if (isGround || bungpimmisGround) //붕핌이도 더블점프!
-        {
-            jumpCnt = jumpCount;
+            GameManager1.playerDie = true;
+
+           
+            music.SetActive(false);
+            Debug.Log("Die");
         }
     }
 
