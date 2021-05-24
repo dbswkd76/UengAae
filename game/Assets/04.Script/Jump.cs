@@ -31,6 +31,10 @@ public class Jump : MonoBehaviour
         jumpCnt = jumpCount;
 
     }
+    private void FixedUpdate()
+    {
+        myrigidbody.AddForce(Vector3.down * 20f * mht.istag);
+    }
 
     void Update()
     {
@@ -57,7 +61,7 @@ public class Jump : MonoBehaviour
             }
         }
 
-        if(DataManager1.Instance.PlayerDie == true)
+        if (GameManager1.playerDie)
         {
             EndPanel.SetActive(true);
         }
