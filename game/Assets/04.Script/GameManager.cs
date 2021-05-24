@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,16 +18,26 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
     #endregion
-
+    public Slider progressbar;
+    public float MaxValue;
     public delegate void OnPlay();
     public OnPlay onPlay;
-
+    public GameObject GameOverPanel;
     public float gameSpeed = 1;
     public bool isPlay = false;
     public List<GameObject> Buttons;
     public GameObject Optionpanel;
     public bool IsPause;
     public GameObject RoundSelect;
+    public void GameOver()
+    {
+        GameOverPanel.SetActive(true);
+        Time.timeScale = 1;
+        IsPause = false;
+        
+    }
+
+    
     public void HelloOption()
     {
         Optionpanel.SetActive(true);
@@ -37,7 +48,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         IsPause = false;
     }
-
+    
     public void HelloRound()
     {
         RoundSelect.SetActive(true);
@@ -76,6 +87,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        progressbar.maxValue = MaxValue;
+        progressbar.value += Time.deltaTime * 5;
+        if (Input.GetKeyDown("r"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (IsPause == false)

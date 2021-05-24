@@ -12,7 +12,11 @@ public class SceneChanger : MonoBehaviour
     public List<GameObject> Buttons;
     public bool IsPause;
 
-
+    public void RetryButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+    }
     public void SceneChangeSelectRound()
     {
         SceneManager.LoadScene("SelectRound");
@@ -21,7 +25,7 @@ public class SceneChanger : MonoBehaviour
 
     public void SceneChangeRound1()
     {
-        SceneManager.LoadScene("Round 1");
+        SceneManager.LoadScene("준석복사(라운드1)");
     }
     public void SceneChangeRound2()
     {
