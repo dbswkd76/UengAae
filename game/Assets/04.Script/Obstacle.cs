@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Obstacle : MonoBehaviour
 {
     [SerializeField] float ObstacleSpeed = 0f;
@@ -18,6 +19,7 @@ public class Obstacle : MonoBehaviour
     }
     private void Update()
     {
+        
         if (!GameManager1.playerDie)
         {
             transform.Translate(-ObstacleSpeed * Time.deltaTime, 0, 0);
