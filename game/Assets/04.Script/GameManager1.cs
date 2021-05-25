@@ -16,15 +16,13 @@ public class GameManager1 : MonoBehaviour
         
     }
     private void Update()
-    {/*
-        if (!DataManager1.Instance.PlayerDie == true)
-        {
-            EndPanel.SetActive(false);
-        }
-        if (DataManager1.Instance.PlayerDie == true)
+    {
+        
+        
+        if (playerDie == true)
         {
             EndPanel.SetActive(true);
-        } */
+        } 
     }
 
     // Update is called once per frame
@@ -39,7 +37,7 @@ public class GameManager1 : MonoBehaviour
     {
 
         playerDie = false;
-        SceneManager.LoadScene("yunjang");
+        SceneManager.LoadScene("윤장");
         
     }
 }
