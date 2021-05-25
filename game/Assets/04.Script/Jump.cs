@@ -34,45 +34,51 @@ public class Jump : MonoBehaviour
 
     void Update()
     {
-        if (!GameManager1.playerDie)
-        {
-            isGround = Physics2D.OverlapCircle(pos.position, checkRadius, islayer);
-            bungpimmisGround = Physics2D.OverlapCircle(bungpimm_pos.position, checkRadius, islayer); //붕핌이도 더블점프!
+        
 
-            if (isGround == true && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
+            if (!GameManager1.playerDie)
             {
-                myrigidbody.velocity = Vector2.up * power * mht.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
-            }
-            if (isGround == false && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
-            {
-                myrigidbody.velocity = Vector2.up * power * mht.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
-            }
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                jumpCnt--;
-            }
-            if (isGround || bungpimmisGround) //붕핌이도 더블점프!
-            {
-                jumpCnt = jumpCount;
-            }
-        }
+                isGround = Physics2D.OverlapCircle(pos.position, checkRadius, islayer);
+                bungpimmisGround = Physics2D.OverlapCircle(bungpimm_pos.position, checkRadius, islayer); //붕핌이도 더블점프!
 
-        if(DataManager1.Instance.PlayerDie == true)
-        {
-            EndPanel.SetActive(true);
-        }
+                if (isGround == true && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
+                {
+                    myrigidbody.velocity = Vector2.up * power * mht.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
+                }
+                if (isGround == false && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
+                {
+                    myrigidbody.velocity = Vector2.up * power * mht.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
+                }
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    jumpCnt--;
+                }
+                if (isGround || bungpimmisGround) //붕핌이도 더블점프!
+                {
+                    jumpCnt = jumpCount;
+                }
+            }
+        
 
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag.CompareTo("Obstacle") == 0)
-        {
-            GameManager1.playerDie = true;
+        
+        
+            if (collision.gameObject.tag.CompareTo("Obstacle") == 0)
+            {
+                GameManager1.playerDie = true;
 
-           
-            music.SetActive(false);
-            Debug.Log("Die");
-        }
+                EndPanel.SetActive(true);
+
+                
+
+                music.SetActive(false);
+
+                Debug.Log("Die");
+            }
+        
     }
 
 }
