@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class meoheeeTag : MonoBehaviour
 {
+    public Jump jump;
     public SpriteRenderer pimmbung;
     public SpriteRenderer bungpimm;
     public AudioSource tag_sound;
     public bool tag_able = true;
     public int istag = 1;
+    public int tag_cnt = 1;
 
     // Update is called once per frame
     void Update()
@@ -21,7 +23,8 @@ public class meoheeeTag : MonoBehaviour
         if (!GameManager1.playerDie)
         {
 
-            if (Input.GetKeyDown(KeyCode.LeftAlt) && tag_able == true)
+
+            if (Input.GetKeyDown(KeyCode.LeftAlt) && (tag_able == true || tag_cnt == 1))
             {
                 if (istag == 1)
                 {
@@ -39,6 +42,7 @@ public class meoheeeTag : MonoBehaviour
                     Debug.Log("핌붕이 달려!!");
                     GetComponent<Rigidbody2D>().gravityScale = 1;
                 }
+                tag_cnt -= 1;
                 if (tag_sound != null)
                 {
                     tag_sound.Play();
@@ -50,6 +54,7 @@ public class meoheeeTag : MonoBehaviour
     public void OnCollisionEnter2D()
     {
         tag_able = true;
+        tag_cnt = 1;
         Debug.Log("점프ㄴㄴ");
     }
 
