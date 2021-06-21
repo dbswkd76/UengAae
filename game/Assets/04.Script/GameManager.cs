@@ -18,37 +18,67 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
     #endregion
+    static public bool playerDie = false;
     public Slider progressbar;
     public float MaxValue;
     public delegate void OnPlay();
     public OnPlay onPlay;
     public GameObject GameOverPanel;
+    public GameObject Optionpanel;
     public float gameSpeed = 1;
     public bool isPlay = false;
     public List<GameObject> Buttons;
-    public GameObject Optionpanel;
     public bool IsPause;
     public GameObject RoundSelect;
+    public GameObject Player;
+    public GameObject Keypanel;
+    public GameObject Clearpanel;
+    public void HelloClear()
+    {
+        Clearpanel.SetActive(true);
+        progressbar.gameObject.SetActive(false);
+    }
+    public void HelloKey()
+    {
+        Keypanel.SetActive(true);
+        Time.timeScale = 0;
+        IsPause = true;
+    }
+    public void ByeKey()
+    {
+        Keypanel.SetActive(false);
+    }
     public void GameOver()
     {
         GameOverPanel.SetActive(true);
         Time.timeScale = 1;
         IsPause = false;
-        
+        progressbar.gameObject.SetActive(false);
     }
-
-    
+    public void RetryButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+        GameOverPanel.SetActive(false);
+    }
     public void HelloOption()
     {
         Optionpanel.SetActive(true);
+        progressbar.gameObject.SetActive(false);
     }
     public void ByeOption()
     {
         Optionpanel.SetActive(false);
+        progressbar.gameObject.SetActive(true);
         Time.timeScale = 1;
         IsPause = false;
     }
-    
+    public void ByeOption2()
+    {
+        Optionpanel.SetActive(false);
+        progressbar.gameObject.SetActive(true);
+
+    }
     public void HelloRound()
     {
         RoundSelect.SetActive(true);
@@ -77,22 +107,37 @@ public class GameManager : MonoBehaviour
         }
         isPlay = true;
         onPlay.Invoke();
+        
     }
     // Start is called before the first frame update
     void Start()
     {
+        progressbar.gameObject.SetActive(true);
         IsPause = false;
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
+        if (playerDie == true)
+        {
+           GameOver();
+        }
+
         progressbar.maxValue = MaxValue;
-        progressbar.value += Time.deltaTime * 5;
+        progressbar.value += Time.deltaTime*100 ;
+
+        if (progressbar.value==MaxValue)
+        {
+            HelloClear();
+        }
         if (Input.GetKeyDown("r"))
         {
+            playerDie = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            progressbar.value = 0;
         }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (IsPause == false)
@@ -107,10 +152,13 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 1;
                 IsPause = false;
                 ByeOption();
+                ByeKey();
                 return;
 
             }
         }
+        
+
     }
 
 }
