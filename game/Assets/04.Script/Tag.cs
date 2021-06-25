@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class meoheeeTag : MonoBehaviour
+public class Tag : MonoBehaviour
 {
     public Jump jump;
     public SpriteRenderer pimmbung;
