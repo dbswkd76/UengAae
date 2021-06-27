@@ -4,18 +4,30 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
+
 public class GameManager : MonoBehaviour
 {
     #region instance
     public static GameManager instance;
     private void Awake()
     {
+        /*var obj = FindObjectsOfType<GameManager>();
         if (instance != null)
         {
             Destroy(gameObject);
             return;
+        if (obj.Length == 1)
+        {
+            DontDestroyOnLoad(gameObject);
         }
+        }*/
+        Clear1 = false;
+        Clear2 = false;
         instance = this;
+        
+        
+       
     }
     #endregion
     static public bool playerDie = false;
@@ -29,14 +41,64 @@ public class GameManager : MonoBehaviour
     public bool isPlay = false;
     public List<GameObject> Buttons;
     public bool IsPause;
-    public GameObject RoundSelect;
     public GameObject Player;
     public GameObject Keypanel;
     public GameObject Clearpanel;
+    public GameObject NotClearpanel;
+    public GameObject Roundpanel;
+    public bool Clear1;
+    public bool Clear2;
+   
+    public void SceneChangeSelectRound()
+    {
+        SceneManager.LoadScene("SelectRound");
+    }
+    // Start is called before the first frame update
+
+    public void SceneChangeRound1()
+    {
+        SceneManager.LoadScene("준석복사(라운드1)");
+    }
+    public void SceneChangeRound2()
+    {
+        if (Clear1 == true)
+            SceneManager.LoadScene("Round 2");
+        else
+            NotCleared();
+    }
+    public void SceneChangeRound3()
+    {
+        if (Clear2 == true)
+            SceneManager.LoadScene("Round 3");
+         else
+            NotCleared();
+    }
+
+
+    public void NotCleared()
+    {
+        NotClearpanel.SetActive(true);
+    }
+    public void ByeNotCleared()
+    {
+        NotClearpanel.SetActive(false);
+    }
     public void HelloClear()
     {
         Clearpanel.SetActive(true);
         progressbar.gameObject.SetActive(false);
+        if (SceneManager.GetActiveScene().name== "준석복사(라운드1)")
+        {
+            Clear1 = true;
+        }
+        if (SceneManager.GetActiveScene().name == "Round 2")
+        {
+            Clear2 = true;
+        }
+    }
+    public void ByeClear()
+    {
+        Clearpanel.SetActive(false);
     }
     public void HelloKey()
     {
@@ -61,6 +123,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         GameOverPanel.SetActive(false);
     }
+    public void HelloRound()
+    {
+        Roundpanel.SetActive(true);
+    }
+    public void ByeRound()
+    {
+        Roundpanel.SetActive(false);
+    }
     public void HelloOption()
     {
         Optionpanel.SetActive(true);
@@ -78,15 +148,6 @@ public class GameManager : MonoBehaviour
         Optionpanel.SetActive(false);
         progressbar.gameObject.SetActive(true);
 
-    }
-    public void HelloRound()
-    {
-        RoundSelect.SetActive(true);
-    }
-
-    public void ByeRound()
-    {
-        RoundSelect.SetActive(false);
     }
     public void OnclickEixt()
     {
@@ -112,6 +173,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         progressbar.gameObject.SetActive(true);
         IsPause = false;
     }
@@ -134,7 +196,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown("r"))
         {
             playerDie = false;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(0);
             progressbar.value = 0;
         }
 

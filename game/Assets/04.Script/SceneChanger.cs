@@ -12,28 +12,8 @@ public class SceneChanger : MonoBehaviour
     public List<GameObject> Buttons;
     public bool IsPause;
 
-    
-    public void SceneChangeSelectRound()
-    {
-        SceneManager.LoadScene("SelectRound");
-    }
-    // Start is called before the first frame update
 
-    public void SceneChangeRound1()
-    {
-        SceneManager.LoadScene("준석복사(라운드1)");
-    }
-    public void SceneChangeRound2()
-    {
-        SceneManager.LoadScene("Round 2");
-    }
-    public void SceneChangeRound3()
-    {
-        SceneManager.LoadScene("Round 3");
-    }
-
-
-
+   
 
     public void PlayBtnClick()
     {
