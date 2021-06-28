@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     static public bool playerDie = false;
     public Slider progressbar;
     public float MaxValue;
+    public float FillSpeed;
     public delegate void OnPlay();
     public OnPlay onPlay;
     public GameObject GameOverPanel;
@@ -176,6 +177,10 @@ public class GameManager : MonoBehaviour
         
         progressbar.gameObject.SetActive(true);
         IsPause = false;
+        if (SceneManager.GetActiveScene().name == "준석복사(라운드1)")
+            FillSpeed = 0.54f;
+        if (SceneManager.GetActiveScene().name == "Round 2")
+            FillSpeed = 0.3f;
     }
 
     // Update is called once per frame
@@ -187,7 +192,7 @@ public class GameManager : MonoBehaviour
         }
 
         progressbar.maxValue = MaxValue;
-        progressbar.value += Time.deltaTime*100 ;
+        progressbar.value +=FillSpeed * Time.deltaTime ;
 
         if (progressbar.value==MaxValue)
         {
