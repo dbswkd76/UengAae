@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01.Scene/SelectRound.unity
     guid: a2a921124210a954eb501dfe7d20398d
-  - enabled: 1
-    path: Assets/01.Scene/Round 1.unity
-    guid: 97dfd7703735f10419067bfd95268649
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/01.Scene/Round 2.unity
     guid: 549e7778d20e546488a44c3fbaa90048
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/01.Scene/\uC724\uC7A5.unity"
     guid: 24a1f54ff7dde65469c46e0f122a0e4d
+  - enabled: 1
+    path: "Assets/01.Scene/\uC900\uC11D\uBCF5\uC0AC(\uB77C\uC6B4\uB4DC1).unity"
+    guid: 75aadfc1269a5ff4ea4b33c8e4bd5119
   m_configObjects: {}
