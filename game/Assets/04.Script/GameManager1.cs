@@ -37,7 +37,7 @@ public class GameManager1 : MonoBehaviour
     {
 
         playerDie = false;
-        SceneManager.LoadScene("윤장");
+        SceneManager.LoadScene("머히 2");
         
     }
 }
