@@ -9,7 +9,7 @@ public class Jump : MonoBehaviour
     public GameObject EndPanel;
     public Tag tag; //머-히태그 추가
     public GameObject music;
-
+    public int istag = 1;
     Rigidbody2D myrigidbody;
 
     [SerializeField] float power;
@@ -17,6 +17,8 @@ public class Jump : MonoBehaviour
     [SerializeField] Transform bungpimm_pos; //붕핌이도 더블점프!
     [SerializeField] float checkRadius;
     [SerializeField] LayerMask islayer;
+    Animator anim;
+    
 
     public int jumpCount;
     int jumpCnt;
@@ -31,12 +33,44 @@ public class Jump : MonoBehaviour
         jumpCnt = jumpCount;
 
     }
-
+    void Awake()
+    {
+        anim = GetComponent<Animator>();
+        myrigidbody = GetComponent<Rigidbody2D>();
+    }
 
     private void FixedUpdate()
     {
         myrigidbody.AddForce(Vector3.down * 20f * tag.istag);
+
+        if (istag== 1)
+        {
+            if (myrigidbody.velocity.y < 0)
+            {
+                Debug.DrawRay(myrigidbody.position, Vector3.down, new Color(0, 1, 0));
+                RaycastHit2D rayHit = Physics2D.Raycast(myrigidbody.position, Vector3.down);
+                if (rayHit.collider != null)
+                {
+                    if (rayHit.distance < 0.5f)
+                        anim.SetBool("isJumping", false);
+                }
+            }
+        }
+        if (istag == -1)
+        {
+            if (myrigidbody.velocity.y > 0)
+            {
+                Debug.DrawRay(myrigidbody.position, Vector3.down, new Color(0, 1, 0));
+                RaycastHit2D rayHit = Physics2D.Raycast(myrigidbody.position, Vector3.down);
+                if (rayHit.collider != null)
+                {
+                    if (rayHit.distance < 0.5f)
+                        anim.SetBool("isJumping", false);
+                }
+            }
+        }
     }
+
     void Update()
     {
         if (!GameManager1.playerDie)
@@ -60,15 +94,17 @@ public class Jump : MonoBehaviour
             {
                 jumpCnt = jumpCount;
             }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                anim.SetBool("isJumping", true);
+                
+            }
         }
 
-        if (GameManager1.playerDie == true)
-        {
-            EndPanel.SetActive(true);
-        }
+        
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+  void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag.CompareTo("Obstacle") == 0)
         {
@@ -80,6 +116,7 @@ public class Jump : MonoBehaviour
 
                 music.SetActive(false);
                 Debug.Log("Die");
+                anim.SetBool("isDie", true);
             }
         }
     }
