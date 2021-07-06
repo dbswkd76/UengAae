@@ -8,9 +8,9 @@ public class Tag : MonoBehaviour
     public SpriteRenderer pimmbung;
     public SpriteRenderer bungpimm;
     public AudioSource tag_sound;
-    public bool tag_able = true;
+    private bool tag_able = true;
     public int istag = 1;
-    public int tag_cnt = 1;
+    private int tag_cnt = 1;
 
     // Update is called once per frame
     void Update()
