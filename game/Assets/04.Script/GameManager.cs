@@ -186,13 +186,17 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        if (SceneManager.GetActiveScene().name == "Round 2")
+        {
+            Clear1 = true;
+        }
         if (playerDie == true)
         {
            GameOver();
         }
 
         progressbar.maxValue = MaxValue;
-        progressbar.value +=FillSpeed * Time.deltaTime ;
+        progressbar.value +=100* Time.deltaTime ;
 
         if (progressbar.value==MaxValue)
         {

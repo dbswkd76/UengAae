@@ -2063,7 +2063,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1940071685}
         m_MethodName: SceneChangeRound2
         m_Mode: 1
         m_Arguments:
@@ -2273,7 +2273,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1940071685}
         m_MethodName: ByeNotCleared
         m_Mode: 1
         m_Arguments:
@@ -2509,7 +2509,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1940071685}
         m_MethodName: SceneChangeRound3
         m_Mode: 1
         m_Arguments:
@@ -4664,7 +4664,7 @@ RectTransform:
   - {fileID: 1246875865}
   - {fileID: 981148872}
   m_Father: {fileID: 1432643237}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5008,7 +5008,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1940071685}
         m_MethodName: SceneChangeRound1
         m_Mode: 1
         m_Arguments:
@@ -5205,7 +5205,7 @@ RectTransform:
   - {fileID: 694364520}
   - {fileID: 788850799}
   m_Father: {fileID: 1432643237}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5751,13 +5751,13 @@ RectTransform:
   m_Children:
   - {fileID: 723482154}
   - {fileID: 1410570393}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1432643237}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 362.5, y: 300}
-  m_SizeDelta: {x: 570.8217, y: 320.5009}
+  m_AnchoredPosition: {x: -3, y: -14.5}
+  m_SizeDelta: {x: -160.17834, y: -308.4991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1426660806
 GameObject:
@@ -5927,12 +5927,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1230295345}
   - {fileID: 1655284049}
   - {fileID: 1122161973}
+  - {fileID: 1230295345}
   - {fileID: 88741262}
   - {fileID: 1111376821}
   - {fileID: 1769472077}
+  - {fileID: 1422770031}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6167,7 +6168,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1940071685}
-        m_MethodName: SceneChangeSelectRound
+        m_MethodName: HelloRound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1940071685}
+        m_MethodName: ByeClear
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6745,7 +6757,7 @@ RectTransform:
   - {fileID: 15104869}
   - {fileID: 1615590483}
   m_Father: {fileID: 1432643237}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
