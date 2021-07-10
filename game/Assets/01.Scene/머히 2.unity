@@ -570,6 +570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 338053501}
+  - component: {fileID: 338053502}
   m_Layer: 0
   m_Name: 'Cloud Group '
   m_TagString: Untagged
@@ -594,6 +595,23 @@ Transform:
   m_Father: {fileID: 1145179569}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &338053502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338053500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20fb358ac6bb17f428cf67e81df24032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_tfBackgrounds:
+  - {fileID: 1955766616}
+  - {fileID: 1563056291}
+  - {fileID: 476710592}
+  m_speed: -3
 --- !u!1 &402098687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,7 +1342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &978770611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1860,6 +1878,7 @@ MonoBehaviour:
   EndPanel: {fileID: 1521914461}
   tag: {fileID: 2116899008}
   music: {fileID: 2116899007}
+  istag: 1
   power: 7
   pos: {fileID: 314653050}
   bungpimm_pos: {fileID: 1590997982}
@@ -3944,7 +3963,7 @@ SpriteRenderer:
   m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1813745579
@@ -4918,6 +4937,7 @@ MonoBehaviour:
   EndPanel: {fileID: 1521914461}
   tag: {fileID: 2116899008}
   music: {fileID: 2116899007}
+  istag: 1
   power: 7
   pos: {fileID: 314653050}
   bungpimm_pos: {fileID: 1590997982}
