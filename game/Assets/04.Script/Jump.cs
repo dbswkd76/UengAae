@@ -7,7 +7,7 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     public GameObject EndPanel;
-    public Tag tag; //머-히태그 추가
+    public Tag Tag; //머-히태그 추가
     public GameObject music;
     public int istag = 1;
     Rigidbody2D myrigidbody;
@@ -41,7 +41,7 @@ public class Jump : MonoBehaviour
 
     private void FixedUpdate()
     {
-        myrigidbody.AddForce(Vector3.down * 20f * tag.istag);
+        myrigidbody.AddForce(Vector3.down * 20f * Tag.istag);
 
         if (istag== 1)
         {
@@ -80,11 +80,11 @@ public class Jump : MonoBehaviour
 
             if (isGround == true && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
             {
-                myrigidbody.velocity = Vector2.up * power * tag.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
+                myrigidbody.velocity = Vector2.up * power * Tag.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
             }
             if (isGround == false && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
             {
-                myrigidbody.velocity = Vector2.up * power * tag.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
+                myrigidbody.velocity = Vector2.up * power * Tag.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
             }
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -109,7 +109,7 @@ public class Jump : MonoBehaviour
         if (collision.gameObject.tag.CompareTo("Obstacle") == 0)
         {
 
-            if ((tag.istag == 1 && isGround) || (tag.istag == -1 && bungpimmisGround)) //붕핌이도 더블점프!
+            if ((Tag.istag == 1 && isGround) || (Tag.istag == -1 && bungpimmisGround)) //붕핌이도 더블점프!
             {
                 GameManager1.playerDie = true;
 

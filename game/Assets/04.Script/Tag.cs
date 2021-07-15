@@ -5,9 +5,11 @@ using UnityEngine;
 public class Tag : MonoBehaviour
 {
     public Jump jump;
-    public SpriteRenderer pimmbung;
-    public SpriteRenderer bungpimm;
-    public AudioSource tag_sound;
+    [SerializeField] SpriteRenderer p_sprite;
+    [SerializeField] SpriteRenderer b_sprite;
+    [SerializeField] Collider2D p_col;
+    [SerializeField] Collider2D b_col;
+    [SerializeField] AudioSource tag_sound;
     private bool tag_able = true;
     public int istag = 1;
     private int tag_cnt = 1;
@@ -28,16 +30,20 @@ public class Tag : MonoBehaviour
             {
                 if (istag == 1)
                 {
-                    pimmbung.enabled = false;
-                    bungpimm.enabled = true;
+                    p_sprite.enabled = false;
+                    b_sprite.enabled = true;
+                    p_col.enabled = false;
+                    b_col.enabled = true;
                     istag = -1;
                     Debug.Log("붕핌이 달려!!");
                     GetComponent<Rigidbody2D>().gravityScale = -1;
                 }
                 else
                 {
-                    pimmbung.enabled = true;
-                    bungpimm.enabled = false;
+                    p_sprite.enabled = true;
+                    b_sprite.enabled = false;
+                    p_col.enabled = true;
+                    b_col.enabled = false;
                     istag = 1;
                     Debug.Log("핌붕이 달려!!");
                     GetComponent<Rigidbody2D>().gravityScale = 1;
