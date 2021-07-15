@@ -3927,6 +3927,7 @@ MonoBehaviour:
   EndPanel: {fileID: 0}
   tag: {fileID: 2027893364}
   music: {fileID: 0}
+  istag: 1
   power: 7
   pos: {fileID: 2137203669}
   bungpimm_pos: {fileID: 532986901}
@@ -3951,9 +3952,7 @@ MonoBehaviour:
   pimmbung: {fileID: 2027893359}
   bungpimm: {fileID: 1018868450}
   tag_sound: {fileID: 2027893361}
-  tag_able: 1
   istag: 1
-  tag_cnt: 1
 --- !u!114 &1018868445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4453,12 +4452,12 @@ RectTransform:
   - {fileID: 1697335362}
   - {fileID: 1106462897}
   m_Father: {fileID: 1432643237}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.100006, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2.399994, y: -1}
+  m_SizeDelta: {x: 10.88855, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111376822
 MonoBehaviour:
@@ -4473,7 +4472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.77254903}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5752,7 +5751,7 @@ RectTransform:
   - {fileID: 723482154}
   - {fileID: 1410570393}
   m_Father: {fileID: 1432643237}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5931,9 +5930,9 @@ RectTransform:
   - {fileID: 1122161973}
   - {fileID: 1230295345}
   - {fileID: 88741262}
-  - {fileID: 1111376821}
   - {fileID: 1769472077}
   - {fileID: 1422770031}
+  - {fileID: 1111376821}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6883,8 +6882,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SceneChangeSelectRound
+      - m_Target: {fileID: 1940071685}
+        m_MethodName: HelloRound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7095,7 +7094,7 @@ RectTransform:
   - {fileID: 1971900105}
   - {fileID: 302062671}
   m_Father: {fileID: 1432643237}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.568}
@@ -7531,8 +7530,6 @@ MonoBehaviour:
   GameOverPanel: {fileID: 1111376820}
   Optionpanel: {fileID: 88741259}
   gameSpeed: 1
-  isPlay: 0
-  Buttons: []
   IsPause: 0
   Player: {fileID: 2027893355}
   Keypanel: {fileID: 1655284048}
@@ -7960,6 +7957,7 @@ MonoBehaviour:
   EndPanel: {fileID: 0}
   tag: {fileID: 2027893364}
   music: {fileID: 0}
+  istag: 1
   power: 7
   pos: {fileID: 2137203669}
   bungpimm_pos: {fileID: 532986901}
@@ -7999,9 +7997,7 @@ MonoBehaviour:
   pimmbung: {fileID: 2027893359}
   bungpimm: {fileID: 1018868450}
   tag_sound: {fileID: 2027893361}
-  tag_able: 1
   istag: 1
-  tag_cnt: 1
 --- !u!1 &2102091462
 GameObject:
   m_ObjectHideFlags: 0

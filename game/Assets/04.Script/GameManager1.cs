@@ -17,8 +17,6 @@ public class GameManager1 : MonoBehaviour
     }
     void Update()
     {
-        
-        
         if (playerDie == true)
         {
             EndPanel.SetActive(true);

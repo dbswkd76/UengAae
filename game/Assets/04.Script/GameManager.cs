@@ -39,8 +39,6 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverPanel;
     public GameObject Optionpanel;
     public float gameSpeed = 1;
-    public bool isPlay = false;
-    public List<GameObject> Buttons;
     public bool IsPause;
     public GameObject Player;
     public GameObject Keypanel;
@@ -114,8 +112,8 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         GameOverPanel.SetActive(true);
-        Time.timeScale = 1;
-        IsPause = false;
+        Time.timeScale = 0;
+        IsPause = true;
         progressbar.gameObject.SetActive(false);
     }
     public void RetryButton()
@@ -160,17 +158,7 @@ public class GameManager : MonoBehaviour
 #endif
     }
 
-    public void PlayBtnClick()
-    {
-        for (int i = 0; i <= 3; i++)
-        {
-            Buttons[i].SetActive(false);
-
-        }
-        isPlay = true;
-        onPlay.Invoke();
-        
-    }
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -178,7 +166,7 @@ public class GameManager : MonoBehaviour
         progressbar.gameObject.SetActive(true);
         IsPause = false;
         if (SceneManager.GetActiveScene().name == "준석복사(라운드1)")
-            FillSpeed = 0.54f;
+            FillSpeed = 0.81f;
         if (SceneManager.GetActiveScene().name == "Round 2")
             FillSpeed = 0.3f;
     }
@@ -192,11 +180,11 @@ public class GameManager : MonoBehaviour
         }
         if (playerDie == true)
         {
-           GameOver();
+            GameOver();
         }
 
         progressbar.maxValue = MaxValue;
-        progressbar.value +=100* Time.deltaTime ;
+        progressbar.value +=FillSpeed* Time.deltaTime ;
 
         if (progressbar.value==MaxValue)
         {
@@ -205,7 +193,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown("r"))
         {
             playerDie = false;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             progressbar.value = 0;
         }
 
