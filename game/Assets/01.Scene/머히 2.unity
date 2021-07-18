@@ -3645,8 +3645,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jump: {fileID: 1020859384}
-  pimmbung: {fileID: 2116899015}
-  bungpimm: {fileID: 1020859382}
+  p_sprite: {fileID: 0}
+  b_sprite: {fileID: 0}
+  p_col: {fileID: 0}
+  b_col: {fileID: 0}
   tag_sound: {fileID: 2116899011}
   istag: 1
 --- !u!114 &1020859384
@@ -3662,7 +3664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndPanel: {fileID: 1521914461}
-  tag: {fileID: 2116899008}
+  Tag: {fileID: 0}
   music: {fileID: 2116899007}
   istag: 1
   power: 7
@@ -7716,8 +7718,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jump: {fileID: 2116899009}
-  pimmbung: {fileID: 2116899015}
-  bungpimm: {fileID: 1020859382}
+  p_sprite: {fileID: 0}
+  b_sprite: {fileID: 0}
+  p_col: {fileID: 0}
+  b_col: {fileID: 0}
   tag_sound: {fileID: 2116899011}
   istag: 1
 --- !u!114 &2116899009
@@ -7733,7 +7737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndPanel: {fileID: 1521914461}
-  tag: {fileID: 2116899008}
+  Tag: {fileID: 0}
   music: {fileID: 2116899007}
   istag: 1
   power: 7

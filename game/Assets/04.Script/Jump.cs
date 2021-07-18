@@ -17,6 +17,7 @@ public class Jump : MonoBehaviour
     [SerializeField] Transform bungpimm_pos; //붕핌이도 더블점프!
     [SerializeField] float checkRadius;
     [SerializeField] LayerMask islayer;
+    public AudioSource diesound;
     Animator anim;
     
 
@@ -117,6 +118,7 @@ public class Jump : MonoBehaviour
                 music.SetActive(false);
                 Debug.Log("Die");
                 anim.SetBool("isDie", true);
+                diesound.Play();
             }
         }
     }

@@ -19,10 +19,17 @@ public class GameManager1 : MonoBehaviour
     {
         if (playerDie == true)
         {
-            EndPanel.SetActive(true);
-        } 
-    }
 
+            Invoke("EndPanel1", 4f);
+
+
+        }
+       
+    }
+    public void EndPanel1()
+    {
+        EndPanel.SetActive(true);
+    }
     // Update is called once per frame
     public void startBtn()
     {
