@@ -21,7 +21,7 @@ public class Jump : MonoBehaviour
     
 
     public int jumpCount;
-    int jumpCnt;
+    private int jumpCnt;
 
     bool isGround;
     bool bungpimmisGround; //붕핌이도 더블점프!
@@ -90,7 +90,7 @@ public class Jump : MonoBehaviour
             {
                 jumpCnt--;
             }
-            if (isGround || bungpimmisGround) //붕핌이도 더블점프!
+            if (isGround || bungpimmisGround)
             {
                 jumpCnt = jumpCount;
             }

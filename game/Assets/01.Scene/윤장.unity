@@ -3508,8 +3508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jump: {fileID: 759684389}
-  pimmbung: {fileID: 759684395}
-  bungpimm: {fileID: 1070380919}
+  p_sprite: {fileID: 759684395}
+  b_sprite: {fileID: 1070380919}
   tag_sound: {fileID: 759684391}
   istag: 1
 --- !u!114 &759684389
@@ -3525,7 +3525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndPanel: {fileID: 1521914461}
-  tag: {fileID: 759684388}
+  Tag: {fileID: 759684388}
   music: {fileID: 759684387}
   istag: 1
   power: 7
@@ -4680,7 +4680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1070380919
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4744,8 +4744,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jump: {fileID: 1070380921}
-  pimmbung: {fileID: 759684395}
-  bungpimm: {fileID: 1070380919}
+  p_sprite: {fileID: 759684395}
+  b_sprite: {fileID: 1070380919}
   tag_sound: {fileID: 759684391}
   istag: 1
 --- !u!114 &1070380921
@@ -4761,7 +4761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndPanel: {fileID: 1521914461}
-  tag: {fileID: 759684388}
+  Tag: {fileID: 1070380920}
   music: {fileID: 759684387}
   istag: 1
   power: 7
