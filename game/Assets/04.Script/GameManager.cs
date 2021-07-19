@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     public GameObject Clearpanel;
     public GameObject NotClearpanel;
     public GameObject Roundpanel;
+    public GameObject Storypanel;
     public bool Clear1;
     public bool Clear2;
    
@@ -56,7 +57,7 @@ public class GameManager : MonoBehaviour
 
     public void SceneChangeRound1()
     {
-        SceneManager.LoadScene("준석복사(라운드1)");
+        SceneManager.LoadScene("준석");
     }
     public void SceneChangeRound2()
     {
@@ -73,7 +74,15 @@ public class GameManager : MonoBehaviour
             NotCleared();
     }
 
+    public void HelloStory()
+    {
+        Storypanel.SetActive(true);
+    }
 
+    public void ByeStory()
+    {
+        Storypanel.SetActive(false);
+    }
     public void NotCleared()
     {
         NotClearpanel.SetActive(true);
@@ -165,7 +174,7 @@ public class GameManager : MonoBehaviour
         
         progressbar.gameObject.SetActive(true);
         IsPause = false;
-        if (SceneManager.GetActiveScene().name == "준석복사(라운드1)")
+        if (SceneManager.GetActiveScene().name == "준석")
             FillSpeed = 0.81f;
         if (SceneManager.GetActiveScene().name == "Round 2")
             FillSpeed = 0.3f;
@@ -184,7 +193,7 @@ public class GameManager : MonoBehaviour
         }
 
         progressbar.maxValue = MaxValue;
-        progressbar.value +=FillSpeed* Time.deltaTime ;
+        progressbar.value +=FillSpeed* Time.deltaTime;
 
         if (progressbar.value==MaxValue)
         {
