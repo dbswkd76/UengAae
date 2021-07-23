@@ -190,7 +190,7 @@ public class GameManager : MonoBehaviour
         }
         if (playerDie == true)
         {
-            GameOver();
+            Invoke("GameOver", 4f);
         }
 
         progressbar.maxValue = MaxValue;
