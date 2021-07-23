@@ -9,7 +9,7 @@ public class Obstacle : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!GameManager1.playerDie)
+        if (!GameManager.playerDie)
         {
             if(collision.gameObject.tag.CompareTo("Player") == 0)
             {
@@ -20,7 +20,7 @@ public class Obstacle : MonoBehaviour
     private void Update()
     {
         
-        if (!GameManager1.playerDie)
+        if (!GameManager.playerDie)
         {
             transform.Translate(-ObstacleSpeed * Time.deltaTime, 0, 0);
             if (transform.position.x <= -10f)

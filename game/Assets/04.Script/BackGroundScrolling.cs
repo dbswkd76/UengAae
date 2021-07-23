@@ -20,7 +20,7 @@ public class BackGroundScrolling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager1.playerDie)
+        if (!GameManager.playerDie)
         {
             for (int i = 0; i < m_tfBackgrounds.Length; i++)
             {

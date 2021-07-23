@@ -20,7 +20,7 @@ public class Tag : MonoBehaviour
 
     public void Player_Tag()
     {
-        if (!GameManager1.playerDie)
+        if (!GameManager.playerDie)
         {
 
 

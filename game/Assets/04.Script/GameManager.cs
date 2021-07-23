@@ -48,7 +48,8 @@ public class GameManager : MonoBehaviour
     public GameObject Storypanel;
     public bool Clear1;
     public bool Clear2;
-   
+    
+    
     public void SceneChangeSelectRound()
     {
         SceneManager.LoadScene("SelectRound");
@@ -78,7 +79,6 @@ public class GameManager : MonoBehaviour
     {
         Storypanel.SetActive(true);
     }
-
     public void ByeStory()
     {
         Storypanel.SetActive(false);
@@ -95,7 +95,7 @@ public class GameManager : MonoBehaviour
     {
         Clearpanel.SetActive(true);
         progressbar.gameObject.SetActive(false);
-        if (SceneManager.GetActiveScene().name== "준석복사(라운드1)")
+        if (SceneManager.GetActiveScene().name == "준석")
         {
             Clear1 = true;
         }
@@ -130,6 +130,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
         GameOverPanel.SetActive(false);
+        playerDie = false;
     }
     public void HelloRound()
     {
@@ -181,7 +182,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    void Update()
     {
         if (SceneManager.GetActiveScene().name == "Round 2")
         {
@@ -204,6 +205,7 @@ public class GameManager : MonoBehaviour
             playerDie = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             progressbar.value = 0;
+            Time.timeScale = 1;
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))

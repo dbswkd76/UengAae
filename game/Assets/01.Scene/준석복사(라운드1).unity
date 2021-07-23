@@ -3925,7 +3925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndPanel: {fileID: 0}
-  tag: {fileID: 2027893364}
+  Tag: {fileID: 0}
   music: {fileID: 0}
   istag: 1
   power: 7
@@ -3935,6 +3935,7 @@ MonoBehaviour:
   islayer:
     serializedVersion: 2
     m_Bits: 1024
+  diesound: {fileID: 0}
   jumpCount: 1
 --- !u!114 &1018868444
 MonoBehaviour:
@@ -3949,8 +3950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jump: {fileID: 2027893362}
-  pimmbung: {fileID: 2027893359}
-  bungpimm: {fileID: 1018868450}
+  p_sprite: {fileID: 0}
+  b_sprite: {fileID: 0}
   tag_sound: {fileID: 2027893361}
   istag: 1
 --- !u!114 &1018868445
@@ -7536,6 +7537,7 @@ MonoBehaviour:
   Clearpanel: {fileID: 1122161972}
   NotClearpanel: {fileID: 1422770028}
   Roundpanel: {fileID: 1230295342}
+  Storypanel: {fileID: 0}
   Clear1: 0
   Clear2: 0
 --- !u!4 &1940071686
@@ -7717,7 +7719,7 @@ GameObject:
   - component: {fileID: 2027893364}
   m_Layer: 9
   m_Name: pimmbung
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7955,7 +7957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndPanel: {fileID: 0}
-  tag: {fileID: 2027893364}
+  Tag: {fileID: 0}
   music: {fileID: 0}
   istag: 1
   power: 7
@@ -7965,6 +7967,7 @@ MonoBehaviour:
   islayer:
     serializedVersion: 2
     m_Bits: 1024
+  diesound: {fileID: 0}
   jumpCount: 1
 --- !u!114 &2027893363
 MonoBehaviour:
@@ -7994,8 +7997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jump: {fileID: 2027893362}
-  pimmbung: {fileID: 2027893359}
-  bungpimm: {fileID: 1018868450}
+  p_sprite: {fileID: 0}
+  b_sprite: {fileID: 0}
   tag_sound: {fileID: 2027893361}
   istag: 1
 --- !u!1 &2102091462

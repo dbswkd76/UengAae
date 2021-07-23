@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    public GameObject EndPanel;
     public Tag Tag; //머-히태그 추가
     public GameObject music;
     public int istag = 1;
@@ -74,7 +73,7 @@ public class Jump : MonoBehaviour
 
     void Update()
     {
-        if (!GameManager1.playerDie)
+        if (!GameManager.playerDie)
         {
             isGround = Physics2D.OverlapCircle(pos.position, checkRadius, islayer);
             bungpimmisGround = Physics2D.OverlapCircle(bungpimm_pos.position, checkRadius, islayer); //붕핌이도 더블점프!
@@ -112,7 +111,7 @@ public class Jump : MonoBehaviour
 
             if ((Tag.istag == 1 && isGround) || (Tag.istag == -1 && bungpimmisGround)) //붕핌이도 더블점프!
             {
-                GameManager1.playerDie = true;
+                GameManager.playerDie = true;
 
 
                 music.SetActive(false);
