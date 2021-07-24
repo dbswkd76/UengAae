@@ -49,7 +49,9 @@ public class GameManager : MonoBehaviour
     public bool Clear1;
     public bool Clear2;
     
-    
+
+   
+
     public void SceneChangeSelectRound()
     {
         SceneManager.LoadScene("SelectRound");
@@ -124,6 +126,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         IsPause = true;
         progressbar.gameObject.SetActive(false);
+        
     }
     public void RetryButton()
     {
@@ -172,8 +175,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
         progressbar.gameObject.SetActive(true);
+
         IsPause = false;
         if (SceneManager.GetActiveScene().name == "준석")
             FillSpeed = 0.81f;
@@ -184,12 +188,19 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         if (SceneManager.GetActiveScene().name == "Round 2")
         {
             Clear1 = true;
         }
+        if (SceneManager.GetActiveScene().name == "Round 3")
+        {
+            Clear2 = true;
+        }
         if (playerDie == true)
         {
+
             Invoke("GameOver", 4f);
         }
 
@@ -215,6 +226,7 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 0;
                 IsPause = true;
                 HelloOption();
+                
                 return;
             }
             if (IsPause == true)
@@ -223,8 +235,8 @@ public class GameManager : MonoBehaviour
                 IsPause = false;
                 ByeOption();
                 ByeKey();
+                
                 return;
-
             }
         }
         
