@@ -13,15 +13,12 @@ public class Jump : MonoBehaviour
     Rigidbody2D myrigidbody;
 
     [SerializeField] float power;
-    [SerializeField] Transform pos;
-    [SerializeField] Transform bungpimm_pos; //붕핌이도 더블점프!
-    [SerializeField] float checkRadius;
     [SerializeField] LayerMask islayer;
     Animator anim;
     
 
     public int jumpCount;
-    private int jumpCnt;
+    public int jumpCnt;
 
     bool isGround;
     bool bungpimmisGround; //붕핌이도 더블점프!
@@ -75,24 +72,14 @@ public class Jump : MonoBehaviour
     {
         if (!GameManager1.playerDie)
         {
-            isGround = Physics2D.OverlapCircle(pos.position, checkRadius, islayer);
-            bungpimmisGround = Physics2D.OverlapCircle(bungpimm_pos.position, checkRadius, islayer); //붕핌이도 더블점프!
-
-            if (isGround == true && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
+            
+            if (Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
             {
                 myrigidbody.velocity = Vector2.up * power * Tag.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
             }
-            if (isGround == false && Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
-            {
-                myrigidbody.velocity = Vector2.up * power * Tag.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
-            }
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
             {
                 jumpCnt--;
-            }
-            if (isGround || bungpimmisGround)
-            {
-                jumpCnt = jumpCount;
             }
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -106,14 +93,16 @@ public class Jump : MonoBehaviour
     }
   void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!GameManager1.playerDie)
+        {
+            jumpCnt = jumpCount;
+        } 
         if (collision.gameObject.tag.CompareTo("Obstacle") == 0)
         {
 
             if ((Tag.istag == 1 && isGround) || (Tag.istag == -1 && bungpimmisGround)) //붕핌이도 더블점프!
             {
                 GameManager1.playerDie = true;
-
-
                 music.SetActive(false);
                 Debug.Log("Die");
                 anim.SetBool("isDie", true);
