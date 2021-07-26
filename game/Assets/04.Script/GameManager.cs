@@ -40,7 +40,6 @@ public class GameManager : MonoBehaviour
     public GameObject Optionpanel;
     public float gameSpeed = 1;
     public bool IsPause;
-    public GameObject Player;
     public GameObject Keypanel;
     public GameObject Clearpanel;
     public GameObject NotClearpanel;
@@ -200,7 +199,6 @@ public class GameManager : MonoBehaviour
         }
         if (playerDie == true)
         {
-
             Invoke("GameOver", 4f);
         }
 

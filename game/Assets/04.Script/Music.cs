@@ -8,29 +8,45 @@ public class Music : MonoBehaviour
     public bool MusicPause;
 
     public Slider backVolume;
-    public AudioSource audiosource;
+   // public Slider SFXVolume;
+    public AudioSource bgmaudio;
+    //public AudioSource sfxaudio;
     GameObject BackgroundMusic;
     private float backVol = 1f;
-
+    //private float sfxVol = 1f;
     public void SoundSlider()
     {
-        audiosource.volume = backVolume.value;
+        bgmaudio.volume = backVolume.value;
+        //sfxaudio.volume = SFXVolume.value;
+
         backVol = backVolume.value;
+        //sfxVol = SFXVolume.value;
         PlayerPrefs.SetFloat("backvol", backVol);
+        //PlayerPrefs.SetFloat("sfxvol", sfxVol);
     }
 
     void Start()
     {
         MusicPause = false;
+
         backVol = PlayerPrefs.GetFloat("backvol", 1f);
+        //sfxVol= PlayerPrefs.GetFloat("sfxvol", 1f);
+
         backVolume.value = backVol;
-        audiosource.volume = backVolume.value;
-        
+        //SFXVolume.value = sfxVol;
+
+        bgmaudio.volume = backVolume.value;
+        //sfxaudio.volume = SFXVolume.value;
     }
 
     
     void Update()
     {
+        if (GameManager.playerDie==true)
+        {
+            GetComponent<AudioSource>().Stop();
+        }
+
         SoundSlider();
         
         if (Input.GetKeyDown(KeyCode.Escape))

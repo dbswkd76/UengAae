@@ -5580,7 +5580,6 @@ MonoBehaviour:
   Optionpanel: {fileID: 218925641}
   gameSpeed: 1
   IsPause: 0
-  Player: {fileID: 759684387}
   Keypanel: {fileID: 1713805388}
   Clearpanel: {fileID: 1693322173}
   NotClearpanel: {fileID: 250038096}
@@ -10491,7 +10490,7 @@ MonoBehaviour:
   jump: {fileID: 1070380921}
   p_sprite: {fileID: 759684395}
   b_sprite: {fileID: 1070380919}
-  tag_sound: {fileID: 1997101485}
+  tag_sound: {fileID: 0}
   istag: 1
 --- !u!114 &1070380921
 MonoBehaviour:
@@ -15163,9 +15162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b8417b0106bb64aa6821b700d90d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsPause: 0
+  MusicPause: 0
   backVolume: {fileID: 1966754808}
-  audiosource: {fileID: 1595351301}
+  bgmaudio: {fileID: 1595351301}
 --- !u!82 &1595351301
 AudioSource:
   m_ObjectHideFlags: 0
