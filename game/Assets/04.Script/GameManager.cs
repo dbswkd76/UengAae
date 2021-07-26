@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour
         GameOverPanel.SetActive(true);
         Time.timeScale = 0;
         IsPause = true;
-        progressbar.gameObject.SetActive(false);
+        
         
     }
     public void RetryButton()
@@ -199,6 +199,7 @@ public class GameManager : MonoBehaviour
         }
         if (playerDie == true)
         {
+            progressbar.gameObject.SetActive(false);
             Invoke("GameOver", 4f);
         }
 
