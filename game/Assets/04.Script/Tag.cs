@@ -45,6 +45,7 @@ public class Tag : MonoBehaviour
                     GetComponent<Rigidbody2D>().gravityScale = 1;
                 }
                 tag_cnt -= 1;
+                jump.jumpCnt = 0;
                 if (tag_sound != null)
                 {
                     tag_sound.Play();
