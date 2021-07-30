@@ -18,6 +18,7 @@ public class Tag : MonoBehaviour
         Player_Tag();
     }
 
+
     public void Player_Tag()
     {
         if (!GameManager.playerDie)
@@ -58,13 +59,13 @@ public class Tag : MonoBehaviour
     {
         tag_able = true;
         tag_cnt = 1;
-        Debug.Log("점프ㄴㄴ");
+       
     }
 
     public void OnCollisionExit2D()
     {
         tag_able = false;
-        Debug.Log("점프 하는 중");
+        
     }
 
 }

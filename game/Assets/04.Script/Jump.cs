@@ -40,7 +40,7 @@ public class Jump : MonoBehaviour
     {
         myrigidbody.AddForce(Vector3.down * 20f * Tag.istag);
 
-        if (istag== 1)
+        if (Tag.istag== 1)
         {
             if (myrigidbody.velocity.y < 0)
             {
@@ -53,7 +53,7 @@ public class Jump : MonoBehaviour
                 }
             }
         }
-        if (istag == -1)
+        if (Tag.istag == -1)
         {
             if (myrigidbody.velocity.y > 0)
             {
@@ -94,22 +94,23 @@ public class Jump : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
 
     {
+        
         if (!GameManager.playerDie)
         {
             jumpCnt = jumpCount;
         }
         if (collision.gameObject.tag.CompareTo("Obstacle") == 0)
         {
-
+            
+            GameManager.playerDie = true;
+            music.SetActive(false);
+            
+          
+            anim.SetBool("isDie", true);
+            diesound.Play();
             if ((Tag.istag == 1 && isGround) || (Tag.istag == -1 && bungpimmisGround)) //붕핌이도 더블점프!
             {
-                GameManager.playerDie = true;
-
-
-                music.SetActive(false);
-                Debug.Log("Die");
-                anim.SetBool("isDie", true);
-                diesound.Play();
+                
             }
         }
     }
