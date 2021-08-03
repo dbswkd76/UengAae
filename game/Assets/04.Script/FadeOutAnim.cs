@@ -10,7 +10,7 @@ public class FadeOutAnim : MonoBehaviour
 
     void Update()
     {
-        if (GameManager1.playerDie == true)
+        if (GameManager.playerDie == true)
         { 
         if (time < _fadeTime)
         {
