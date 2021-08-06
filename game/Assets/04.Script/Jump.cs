@@ -7,7 +7,7 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     public Tag Tag; //머-히태그 추가
-    public GameObject music;
+    
     public int istag = 1;
     Rigidbody2D myrigidbody;
 
@@ -103,11 +103,12 @@ public class Jump : MonoBehaviour
         {
             
             GameManager.playerDie = true;
-            music.SetActive(false);
+            
             
           
             anim.SetBool("isDie", true);
             diesound.Play();
+            
             if ((Tag.istag == 1 && isGround) || (Tag.istag == -1 && bungpimmisGround)) //붕핌이도 더블점프!
             {
                 
