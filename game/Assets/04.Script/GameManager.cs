@@ -47,9 +47,12 @@ public class GameManager : MonoBehaviour
     public GameObject Storypanel;
     public bool Clear1;
     public bool Clear2;
-    
 
-   
+
+    public void SceneChangeTutorial()
+    {
+        SceneManager.LoadScene("튜토리얼");
+    }
 
     public void SceneChangeSelectRound()
     {
@@ -178,7 +181,7 @@ public class GameManager : MonoBehaviour
         progressbar.gameObject.SetActive(true);
 
         IsPause = false;
-        if (SceneManager.GetActiveScene().name == "준석")
+        if (SceneManager.GetActiveScene().name == "준석"|| SceneManager.GetActiveScene().name == "튜토리얼")
             FillSpeed = 0.81f;
         if (SceneManager.GetActiveScene().name == "Round 2")
             FillSpeed = 0.3f;

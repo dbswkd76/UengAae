@@ -12170,7 +12170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   progressbar: {fileID: 1946164064}
   MaxValue: 100
-  FillSpeed: 0.81
+  FillSpeed: 0
   GameOverPanel: {fileID: 620882090}
   Optionpanel: {fileID: 1448271759}
   gameSpeed: 1
