@@ -1324,9 +1324,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b8417b0106bb64aa6821b700d90d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MusicPause: 0
   backVolume: {fileID: 1366224649}
-  audio: {fileID: 798954687}
-  IsPause: 0
+  bgmaudio: {fileID: 0}
 --- !u!82 &798954687
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1650,7 +1650,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1371066240}
-        m_MethodName: SceneChangeSelectRound
+        m_MethodName: SceneChangeTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2576,7 +2576,6 @@ MonoBehaviour:
   Optionpanel: {fileID: 1257242575}
   gameSpeed: 1
   IsPause: 0
-  Player: {fileID: 0}
   Keypanel: {fileID: 1275284800}
   Clearpanel: {fileID: 0}
   NotClearpanel: {fileID: 0}
