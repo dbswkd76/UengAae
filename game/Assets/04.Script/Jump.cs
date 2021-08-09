@@ -15,9 +15,6 @@ public class Jump : MonoBehaviour
     [SerializeField] LayerMask islayer;
     public AudioSource diesound;
     Animator anim;
-    public AudioSource ado;
-    public AudioClip jumpaudio;
-    
     
 
     public int jumpCount;
@@ -79,8 +76,6 @@ public class Jump : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
             {
                 myrigidbody.velocity = Vector2.up * power * Tag.istag; //istag는 핌붕이일때 1, 붕핌이일때 -1 입니다
-
-                JumpSound();
             }
             if (Input.GetKeyDown(KeyCode.Space) && jumpCnt > 0)
             {
@@ -119,10 +114,6 @@ public class Jump : MonoBehaviour
                 
             }
         }
-    }
-    public void JumpSound()
-    {
-        ado.PlayOneShot(jumpaudio);
     }
 
 }
