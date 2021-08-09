@@ -4765,7 +4765,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: SceneChangeRound2
         m_Mode: 1
         m_Arguments:
@@ -6197,7 +6197,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: ByeNotCleared
         m_Mode: 1
         m_Arguments:
@@ -10776,7 +10776,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: HelloKey
         m_Mode: 1
         m_Arguments:
@@ -10787,7 +10787,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: ByeOption2
         m_Mode: 1
         m_Arguments:
@@ -12373,7 +12373,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: HelloRound
         m_Mode: 1
         m_Arguments:
@@ -12384,7 +12384,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: ByeClear
         m_Mode: 1
         m_Arguments:
@@ -12811,7 +12811,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: SceneChangeRound3
         m_Mode: 1
         m_Arguments:
@@ -12941,7 +12941,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: RetryButton
         m_Mode: 1
         m_Arguments:
@@ -13194,7 +13194,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: RetryButton
         m_Mode: 1
         m_Arguments:
@@ -17496,8 +17496,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnclickEixt
+      - m_Target: {fileID: 983878146}
+        m_MethodName: OnclickExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18756,8 +18756,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnclickEixt
+      - m_Target: {fileID: 983878146}
+        m_MethodName: OnclickExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21819,8 +21819,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnclickEixt
+      - m_Target: {fileID: 983878146}
+        m_MethodName: OnclickExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22531,7 +22531,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: ByeKey
         m_Mode: 1
         m_Arguments:
@@ -22542,7 +22542,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: HelloOption
         m_Mode: 1
         m_Arguments:
@@ -23214,7 +23214,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: ByeOption
         m_Mode: 1
         m_Arguments:
@@ -24449,7 +24449,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: HelloRound
         m_Mode: 1
         m_Arguments:
@@ -26014,7 +26014,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 983878146}
         m_MethodName: SceneChangeRound1
         m_Mode: 1
         m_Arguments:
@@ -26741,7 +26741,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0e4689865ae9aff4fbe3ebc85a9d11e9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c7d7f7e295466d5468010cd463990a73, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

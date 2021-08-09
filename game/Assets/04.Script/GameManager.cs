@@ -163,7 +163,7 @@ public class GameManager : MonoBehaviour
         progressbar.gameObject.SetActive(true);
 
     }
-    public void OnclickEixt()
+    public void OnclickExit()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
