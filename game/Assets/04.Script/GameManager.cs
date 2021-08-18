@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     public void SceneChangeRound2()
     {
         if (Clear1 == true)
-            SceneManager.LoadScene("Round 2");
+            SceneManager.LoadScene("윤장2라");
         else
             NotCleared();
     }
@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
         {
             Clear1 = true;
         }
-        if (SceneManager.GetActiveScene().name == "Round 2")
+        if (SceneManager.GetActiveScene().name == "윤장2라")
         {
             Clear2 = true;
         }
@@ -183,8 +183,8 @@ public class GameManager : MonoBehaviour
         IsPause = false;
         if (SceneManager.GetActiveScene().name == "준석"|| SceneManager.GetActiveScene().name == "튜토리얼")
             FillSpeed = 0.81f;
-        if (SceneManager.GetActiveScene().name == "Round 2")
-            FillSpeed = 0.3f;
+        if (SceneManager.GetActiveScene().name == "윤장2라")
+            FillSpeed = 0.97f;
     }
 
     // Update is called once per frame
@@ -192,7 +192,7 @@ public class GameManager : MonoBehaviour
     {
         
 
-        if (SceneManager.GetActiveScene().name == "Round 2")
+        if (SceneManager.GetActiveScene().name == "윤장2라")
         {
             Clear1 = true;
         }

@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/01.Scene/\uC900\uC11D.unity"
     guid: 6cfd30d81248b3d4797bdff0cf240893
+  - enabled: 1
+    path: "Assets/01.Scene/\uC724\uC7A52\uB77C.unity"
+    guid: d682723735e3cc240ab2f49bbd904e5b
   m_configObjects: {}
