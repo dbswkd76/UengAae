@@ -1339,7 +1339,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ed6289949e8d3dc49bba1e6e966abf01, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1650,7 +1650,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1371066240}
-        m_MethodName: SceneChangeTutorial
+        m_MethodName: SceneChangeCutScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -53,6 +53,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("튜토리얼");
     }
+    public void SceneChangeCutScene()
+    {
+        SceneManager.LoadScene("준석");
+    }
 
     public void SceneChangeSelectRound()
     {
@@ -62,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     public void SceneChangeRound1()
     {
-        SceneManager.LoadScene("준석");
+        SceneManager.LoadScene("튜토리얼");
     }
     public void SceneChangeRound2()
     {
