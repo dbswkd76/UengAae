@@ -23,7 +23,7 @@ public class Obstacle : MonoBehaviour
         if (!GameManager.playerDie)
         {
             transform.Translate(-ObstacleSpeed * Time.deltaTime, 0, 0);
-            if (transform.position.x <= -10f)
+            if (transform.position.x <= -20f)
             {
                 Destroy(gameObject);
             }
