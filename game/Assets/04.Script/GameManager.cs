@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         Clear2_1 = false;
         Clear2_2 = false;
         instance = this;
-        Attempt = 0;
+        
 
 
     }
@@ -51,8 +51,9 @@ public class GameManager : MonoBehaviour
     public bool Clear1_2;
     public bool Clear2_1;
     public bool Clear2_2;
-    int Attempt;
+    public static int Attempt=1;
     public Text AttemptText;
+    public Text ProgressText;
     public void SceneChangeTutorial()
     {
         SceneManager.LoadScene("튜토리얼");
@@ -148,14 +149,16 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         IsPause = true;
         
-        
+
     }
     public void RetryButton()
     {
+        Attempt++;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
         GameOverPanel.SetActive(false);
         playerDie = false;
+       
     }
     public void HelloRound()
     {
@@ -197,21 +200,23 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        
         progressbar.gameObject.SetActive(true);
 
         IsPause = false;
-        if (SceneManager.GetActiveScene().name == "준석"|| SceneManager.GetActiveScene().name == "튜토리얼")
+        if (SceneManager.GetActiveScene().name == "머히 2"|| SceneManager.GetActiveScene().name == "튜토리얼")
             FillSpeed = 0.81f;
-        if (SceneManager.GetActiveScene().name == "윤장2라")
+        if (SceneManager.GetActiveScene().name == "윤장2라-2"|| SceneManager.GetActiveScene().name == "2-2라운드")
             FillSpeed = 0.97f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        AttemptText.text = "Attemp: " + Attempt.ToString();
+        int percent = 100-(int)progressbar.value;
 
+        AttemptText.text = Attempt.ToString() + "번 째 용사";
+        ProgressText.text = percent.ToString()+"%만 더 달리면 탈출이야!!";
         if (SceneManager.GetActiveScene().name == "윤장2라-2")
         {
             Clear1_1 = true;
@@ -225,9 +230,10 @@ public class GameManager : MonoBehaviour
         if (playerDie == true)
         {
             progressbar.gameObject.SetActive(false);
-            Attempt+=1;
             Invoke("GameOver", 4f);
-           
+            
+            
+
         }
 
         progressbar.maxValue = MaxValue;
@@ -240,9 +246,11 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown("r"))
         {
             playerDie = false;
+            Attempt++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             progressbar.value = 0;
             Time.timeScale = 1;
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
