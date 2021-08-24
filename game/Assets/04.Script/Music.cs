@@ -21,13 +21,17 @@ public class Music : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(PlaySoundAfterDelay());
         MusicPause = false;
-
         backVol = PlayerPrefs.GetFloat("backvol", 1f);
         backVolume.value = backVol;
         bgmaudio.volume = backVolume.value;
     }
-
+    IEnumerator PlaySoundAfterDelay()
+    {
+        yield return new WaitForSeconds(3);
+        GetComponent<AudioSource>().Play();
+    }
 
     void Update()
     {
