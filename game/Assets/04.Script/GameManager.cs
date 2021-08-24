@@ -22,12 +22,14 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         }*/
-        Clear1 = false;
-        Clear2 = false;
+        Clear1_1 = false;
+        Clear1_2 = false;
+        Clear2_1 = false;
+        Clear2_2 = false;
         instance = this;
         
-        
-       
+
+
     }
     #endregion
     static public bool playerDie = false;
@@ -45,10 +47,13 @@ public class GameManager : MonoBehaviour
     public GameObject NotClearpanel;
     public GameObject Roundpanel;
     public GameObject Storypanel;
-    public bool Clear1;
-    public bool Clear2;
-
-
+    public bool Clear1_1;
+    public bool Clear1_2;
+    public bool Clear2_1;
+    public bool Clear2_2;
+    public static int Attempt=1;
+    public Text AttemptText;
+    public Text ProgressText;
     public void SceneChangeTutorial()
     {
         SceneManager.LoadScene("튜토리얼");
@@ -64,21 +69,25 @@ public class GameManager : MonoBehaviour
     }
     // Start is called before the first frame update
 
-    public void SceneChangeRound1()
+    public void SceneChangeRound1_1()
     {
         SceneManager.LoadScene("튜토리얼");
     }
-    public void SceneChangeRound2()
+    public void SceneChangeRound1_2()
     {
-        if (Clear1 == true)
-            SceneManager.LoadScene("윤장2라");
+        SceneManager.LoadScene("머히 2");
+    }
+    public void SceneChangeRound2_1()
+    {
+        if (Clear1_1 == true&&Clear1_2==true)
+            SceneManager.LoadScene("윤장2라-2");
         else
             NotCleared();
     }
-    public void SceneChangeRound3()
+    public void SceneChangeRound2_2()
     {
-        if (Clear2 == true)
-            SceneManager.LoadScene("Round 3");
+        if (Clear1_1 == true && Clear1_2 == true)
+            SceneManager.LoadScene("2-2라운드");
          else
             NotCleared();
     }
@@ -103,13 +112,21 @@ public class GameManager : MonoBehaviour
     {
         Clearpanel.SetActive(true);
         progressbar.gameObject.SetActive(false);
-        if (SceneManager.GetActiveScene().name == "준석")
+        if (SceneManager.GetActiveScene().name == "튜토리얼")
         {
-            Clear1 = true;
+            Clear1_1 = true;
         }
-        if (SceneManager.GetActiveScene().name == "윤장2라")
+        if (SceneManager.GetActiveScene().name == "머히 2")
         {
-            Clear2 = true;
+            Clear1_2 = true;
+        }
+        if (SceneManager.GetActiveScene().name == "윤장2라-2")
+        {
+            Clear2_1 = true;
+        }
+        if (SceneManager.GetActiveScene().name == "2-2라운드")
+        {
+            Clear2_2 = true;
         }
     }
     public void ByeClear()
@@ -132,14 +149,16 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
         IsPause = true;
         
-        
+
     }
     public void RetryButton()
     {
+        Attempt++;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
         GameOverPanel.SetActive(false);
         playerDie = false;
+       
     }
     public void HelloRound()
     {
@@ -181,33 +200,40 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        
         progressbar.gameObject.SetActive(true);
 
         IsPause = false;
-        if (SceneManager.GetActiveScene().name == "준석"|| SceneManager.GetActiveScene().name == "튜토리얼")
+        if (SceneManager.GetActiveScene().name == "머히 2"|| SceneManager.GetActiveScene().name == "튜토리얼")
             FillSpeed = 0.81f;
-        if (SceneManager.GetActiveScene().name == "윤장2라")
+        if (SceneManager.GetActiveScene().name == "윤장2라-2"|| SceneManager.GetActiveScene().name == "2-2라운드")
             FillSpeed = 0.97f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        int percent = 100-(int)progressbar.value;
 
-        if (SceneManager.GetActiveScene().name == "윤장2라")
+        AttemptText.text = Attempt.ToString() + "번 째 용사";
+        ProgressText.text = percent.ToString()+"%만 더 달리면 탈출이야!!";
+        if (SceneManager.GetActiveScene().name == "윤장2라-2")
         {
-            Clear1 = true;
+            Clear1_1 = true;
+            Clear1_2 = true;
         }
-        if (SceneManager.GetActiveScene().name == "Round 3")
+        if (SceneManager.GetActiveScene().name == "2-2라운드")
         {
-            Clear2 = true;
+            Clear1_1 = true;
+            Clear1_2 = true;
         }
         if (playerDie == true)
         {
             progressbar.gameObject.SetActive(false);
             Invoke("GameOver", 4f);
+            
+            
+
         }
 
         progressbar.maxValue = MaxValue;
@@ -220,9 +246,11 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown("r"))
         {
             playerDie = false;
+            Attempt++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             progressbar.value = 0;
             Time.timeScale = 1;
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
