@@ -230,6 +230,7 @@ public class GameManager : MonoBehaviour
         if (playerDie == true)
         {
             progressbar.gameObject.SetActive(false);
+            AttemptText.gameObject.SetActive(false);
             Invoke("GameOver", 4f);
             
             
@@ -260,7 +261,7 @@ public class GameManager : MonoBehaviour
                 Time.timeScale = 0;
                 IsPause = true;
                 HelloOption();
-                
+                AttemptText.gameObject.SetActive(false);
                 return;
             }
             if (IsPause == true)
@@ -269,7 +270,7 @@ public class GameManager : MonoBehaviour
                 IsPause = false;
                 ByeOption();
                 ByeKey();
-                
+                AttemptText.gameObject.SetActive(true);
                 return;
             }
         }
