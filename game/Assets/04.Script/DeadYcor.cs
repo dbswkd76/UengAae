@@ -15,7 +15,7 @@ public class DeadYcor : MonoBehaviour {
     void Update()
     {
         if (!GameManager.playerDie){
-            if (transform.position.y>10||transform.position.y<-5){
+            if (transform.position.y>10||transform.position.y<-5||transform.position.x<-1){
                 GameManager.playerDie = true;
                 music.SetActive(false);
                 Debug.Log("Die");
