@@ -4541,7 +4541,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b8417b0106bb64aa6821b700d90d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicPause: 0
   backVolume: {fileID: 1253471331}
   bgmaudio: {fileID: 285713203}
 --- !u!82 &285713203

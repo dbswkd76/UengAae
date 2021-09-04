@@ -201,10 +201,9 @@ public class GameManager : MonoBehaviour
         MaxValue = 100;
         progressbar.gameObject.SetActive(true);
 
-        
-        if (SceneManager.GetActiveScene().name == "머히 2"|| SceneManager.GetActiveScene().name == "튜토리얼")
-            FillSpeed = 0.81f;
-        if (SceneManager.GetActiveScene().name == "윤장2라-2"|| SceneManager.GetActiveScene().name == "2-2라운드")
+        if (SceneManager.GetActiveScene().name == "튜토리얼")
+            FillSpeed = 1.4f;
+        if (SceneManager.GetActiveScene().name == "윤장2라-2"|| SceneManager.GetActiveScene().name == "2-2라운드"|| SceneManager.GetActiveScene().name == "머히 2")
             FillSpeed = 0.97f;
     }
 
