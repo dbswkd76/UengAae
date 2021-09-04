@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 public class CutScene : MonoBehaviour
 {
-
-
-
+    
+   
+    public void SceneChangeRound1_1()
+    {
+        SceneManager.LoadScene("튜토리얼");
+    }
+    
 
     // Start is called before the first frame update
     void Start()
