@@ -29,7 +29,7 @@ public class Music : MonoBehaviour
     }
     IEnumerator PlaySoundAfterDelay()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
         GetComponent<AudioSource>().Play();
     }
 
@@ -51,6 +51,7 @@ public class Music : MonoBehaviour
                 GetComponent<AudioSource>().Pause();
                 return;
             }
+
             if (MusicPause == true)
             {
                 Time.timeScale = 1;
