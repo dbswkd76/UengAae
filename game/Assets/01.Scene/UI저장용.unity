@@ -199,49 +199,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19209908}
   m_CullTransparentMesh: 0
---- !u!1 &99866043
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 99866045}
-  - component: {fileID: 99866044}
-  m_Layer: 0
-  m_Name: SceneChanger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &99866044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99866043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25f8570f0eab03c479f4632b86ccc374, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &99866045
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99866043}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 369.2, y: 206.49994, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &167353639 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8791321103512822411, guid: aaff457b7d2248349acd1180609a687b,
@@ -330,7 +287,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: HelloRound
         m_Mode: 1
         m_Arguments:
@@ -460,7 +417,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: RetryButton
         m_Mode: 1
         m_Arguments:
@@ -625,7 +582,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: ByeKey
         m_Mode: 1
         m_Arguments:
@@ -636,7 +593,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: HelloOption
         m_Mode: 1
         m_Arguments:
@@ -942,67 +899,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692813824}
   m_CullTransparentMesh: 0
---- !u!1 &716900281
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 716900283}
-  - component: {fileID: 716900282}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &716900282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716900281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f24b650044a95948b291a1e88d6a497, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressbar: {fileID: 0}
-  MaxValue: 0
-  FillSpeed: 0
-  GameOverPanel: {fileID: 0}
-  Optionpanel: {fileID: 0}
-  gameSpeed: 1
-  IsPause: 0
-  Keypanel: {fileID: 0}
-  Clearpanel: {fileID: 0}
-  NotClearpanel: {fileID: 0}
-  Roundpanel: {fileID: 0}
-  Storypanel: {fileID: 0}
-  Clear1_1: 0
-  Clear1_2: 0
-  Clear2_1: 0
-  Clear2_2: 0
-  AttemptText: {fileID: 0}
-  ProgressText: {fileID: 0}
---- !u!4 &716900283
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716900281}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 369.2, y: 206.49994, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &773419440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,7 +1059,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: HelloKey
         m_Mode: 1
         m_Arguments:
@@ -1174,7 +1070,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: ByeOption2
         m_Mode: 1
         m_Arguments:
@@ -1530,7 +1426,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: OnclickEixt
         m_Mode: 1
         m_Arguments:
@@ -1738,7 +1634,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: HelloRound
         m_Mode: 1
         m_Arguments:
@@ -1749,7 +1645,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: ByeClear
         m_Mode: 1
         m_Arguments:
@@ -1958,7 +1854,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: ByeOption
         m_Mode: 1
         m_Arguments:
@@ -2658,7 +2554,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: OnclickEixt
         m_Mode: 1
         m_Arguments:
@@ -3938,7 +3834,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: ByeNotCleared
         m_Mode: 1
         m_Arguments:
@@ -4381,7 +4277,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: OnclickEixt
         m_Mode: 1
         m_Arguments:
@@ -4511,7 +4407,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 716900282}
+      - m_Target: {fileID: 0}
         m_MethodName: RetryButton
         m_Mode: 1
         m_Arguments:
@@ -4646,7 +4542,7 @@ PrefabInstance:
     - target: {fileID: 8791321103512822410, guid: aaff457b7d2248349acd1180609a687b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8791321103512822411, guid: aaff457b7d2248349acd1180609a687b,
         type: 3}
