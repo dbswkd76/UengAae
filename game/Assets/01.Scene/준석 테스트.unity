@@ -12170,7 +12170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressbar: {fileID: 1946164064}
-  MaxValue: 100
+  MaxValue: 0
   FillSpeed: 0.81
   GameOverPanel: {fileID: 620882090}
   Optionpanel: {fileID: 1448271759}
@@ -12180,7 +12180,6 @@ MonoBehaviour:
   Clearpanel: {fileID: 1604810081}
   NotClearpanel: {fileID: 621874279}
   Roundpanel: {fileID: 1634072993}
-  Storypanel: {fileID: 0}
   Clear1_1: 0
   Clear1_2: 0
   Clear2_1: 0
@@ -13487,7 +13486,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b8417b0106bb64aa6821b700d90d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicPause: 0
   backVolume: {fileID: 303307333}
   bgmaudio: {fileID: 1076463746}
 --- !u!82 &1076463746

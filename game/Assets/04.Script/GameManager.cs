@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverPanel;
     public GameObject Optionpanel;
     public float gameSpeed = 1;
-    public bool IsPause;
+    public bool IsPause = false;
     public GameObject Keypanel;
     public GameObject Clearpanel;
     public GameObject NotClearpanel;
@@ -53,6 +53,8 @@ public class GameManager : MonoBehaviour
     public static int Attempt=1;
     public Text AttemptText;
     public Text ProgressText;
+    public static bool OptionPanelActive=false;
+    
     public void SceneChangeTutorial()
     {
         SceneManager.LoadScene("튜토리얼");
@@ -128,8 +130,8 @@ public class GameManager : MonoBehaviour
     public void HelloKey()
     {
         Keypanel.SetActive(true);
-        Time.timeScale = 0;
-        IsPause = true;
+        //Time.timeScale = 0;
+        
     }
     public void ByeKey()
     {
@@ -138,10 +140,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         GameOverPanel.SetActive(true);
-        Time.timeScale = 0;
         IsPause = true;
-        
-
     }
     public void RetryButton()
     {
@@ -163,19 +162,26 @@ public class GameManager : MonoBehaviour
     public void HelloOption()
     {
         Optionpanel.SetActive(true);
-        progressbar.gameObject.SetActive(false);
+        progressbar.gameObject.SetActive(false);        
+        AttemptText.gameObject.SetActive(false);
+        IsPause = true;
+        Music.MusicPause = true;
     }
     public void ByeOption()
     {
         Optionpanel.SetActive(false);
         progressbar.gameObject.SetActive(true);
-        Time.timeScale = 1;
+        AttemptText.gameObject.SetActive(true);
         IsPause = false;
+        Music.MusicPause = false;
+
     }
-    public void ByeOption2()
+    public void ByeOption2()   //옵션패널에서 조작법 버튼 눌렀을 때 -> 조작법 패널이 켜지고 옵션패널은 꺼져야됨
     {
         Optionpanel.SetActive(false);
         progressbar.gameObject.SetActive(true);
+        IsPause = true;
+        Music.MusicPause = true;
 
     }
     public void OnclickExit()
@@ -192,10 +198,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        MaxValue = 100;
         progressbar.gameObject.SetActive(true);
 
-        IsPause = false;
+        
         if (SceneManager.GetActiveScene().name == "머히 2"|| SceneManager.GetActiveScene().name == "튜토리얼")
             FillSpeed = 0.81f;
         if (SceneManager.GetActiveScene().name == "윤장2라-2"|| SceneManager.GetActiveScene().name == "2-2라운드")
@@ -205,10 +211,21 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int percent = 100-(int)progressbar.value;
 
+
+        int percent = 100 - (int)progressbar.value;
         AttemptText.text = Attempt.ToString() + "번 째 용사";
-        ProgressText.text = percent.ToString()+"%만 더 달리면 탈출이야!!";
+        ProgressText.text = percent.ToString() + "%만 더 달리면 탈출이야!!";
+
+        if (Optionpanel.activeSelf==true || Keypanel.activeSelf==true)
+        {
+            OptionPanelActive = true;
+        }
+        if (Optionpanel.activeSelf == false && Keypanel.activeSelf == false)
+        {
+            OptionPanelActive = false;
+        }
+        
         if (SceneManager.GetActiveScene().name == "윤장2라-2")
         {
             Clear1_1 = true;
@@ -219,18 +236,20 @@ public class GameManager : MonoBehaviour
             Clear1_1 = true;
             Clear1_2 = true;
         }
-        if (playerDie == true)
-        {
-            progressbar.gameObject.SetActive(false);
-            AttemptText.gameObject.SetActive(false);
-            Invoke("GameOver", 4f);
-            
-            
-
-        }
 
         progressbar.maxValue = MaxValue;
-        progressbar.value +=FillSpeed* Time.deltaTime;
+
+        if (playerDie == false)
+        {
+            progressbar.value += FillSpeed * Time.deltaTime;  //살아있는 동안에는 진행바 채우기  죽으면 멈춰야 진행정도를 게임오버패널에 구현가능
+        }
+        if (playerDie == true)
+        {
+            Time.timeScale = 0;        
+            progressbar.gameObject.SetActive(false);
+            AttemptText.gameObject.SetActive(false);
+            Invoke("GameOver", 3f);
+        }
 
         if (progressbar.value==MaxValue)
         {
@@ -243,26 +262,25 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             progressbar.value = 0;
             Time.timeScale = 1;
-            
         }
-
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (IsPause == false)
+            if (IsPause == false) //게임 진행중일때 esc를 누름  -> 게임 멈춤
             {
                 Time.timeScale = 0;
-                IsPause = true;
+                //IsPause = true;
+                //Music.MusicPause = true;
                 HelloOption();
-                AttemptText.gameObject.SetActive(false);
                 return;
             }
-            if (IsPause == true)
+            if (IsPause == true) //게임이 멈춰있을 때 esc를 누름 -> 게임 재개
             {
                 Time.timeScale = 1;
-                IsPause = false;
+                //IsPause = false;
+                //Music.MusicPause = false;
                 ByeOption();
                 ByeKey();
-                AttemptText.gameObject.SetActive(true);
                 return;
             }
         }

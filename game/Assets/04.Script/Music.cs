@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Music : MonoBehaviour
 {
-    public bool MusicPause;
+    public static bool MusicPause;
 
     public Slider backVolume;
     public AudioSource bgmaudio;
@@ -29,12 +29,40 @@ public class Music : MonoBehaviour
     }
     IEnumerator PlaySoundAfterDelay()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1);
         GetComponent<AudioSource>().Play();
     }
 
     void Update()
     {
+        if (GameManager.OptionPanelActive == true) 
+        {
+            Time.timeScale = 0;
+            GetComponent<AudioSource>().Pause();
+        }
+        if (GameManager.OptionPanelActive == false) 
+        {
+            Time.timeScale = 1;
+            GetComponent<AudioSource>().UnPause();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (MusicPause == false) //게임이 진행중일 때 esc -> 게임 정지
+            {
+
+                MusicPause = true;
+                GetComponent<AudioSource>().Pause();
+                return;
+            }
+            if (MusicPause == true) //게임이 진행중 아닐 때 esc -> 게임 재개
+            {
+                MusicPause = false;
+                GetComponent<AudioSource>().UnPause();
+                return;
+            }
+        }
+
         if (GameManager.playerDie==true)
         {
             GetComponent<AudioSource>().Stop();
@@ -42,24 +70,7 @@ public class Music : MonoBehaviour
 
         SoundSlider();
         
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (MusicPause == false)
-            {
-                Time.timeScale = 0;
-                MusicPause = true;
-                GetComponent<AudioSource>().Pause();
-                return;
-            }
-
-            if (MusicPause == true)
-            {
-                Time.timeScale = 1;
-                MusicPause = false;
-                GetComponent<AudioSource>().UnPause();
-                return;
-            }
-        }
+        
     }
 
     
