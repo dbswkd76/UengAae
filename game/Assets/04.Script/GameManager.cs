@@ -46,7 +46,6 @@ public class GameManager : MonoBehaviour
     public GameObject Clearpanel;
     public GameObject NotClearpanel;
     public GameObject Roundpanel;
-    public GameObject Storypanel;
     public bool Clear1_1;
     public bool Clear1_2;
     public bool Clear2_1;
@@ -92,14 +91,7 @@ public class GameManager : MonoBehaviour
             NotCleared();
     }
 
-    public void HelloStory()
-    {
-        Storypanel.SetActive(true);
-    }
-    public void ByeStory()
-    {
-        Storypanel.SetActive(false);
-    }
+    
     public void NotCleared()
     {
         NotClearpanel.SetActive(true);
