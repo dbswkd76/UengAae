@@ -101,20 +101,10 @@ public class Jump : MonoBehaviour
         }
         if (collision.gameObject.tag.CompareTo("Obstacle") == 0)
         {
-            
             GameManager.playerDie = true;
-            
-            
-          
             anim.SetBool("isDie", true);
             diesound.Play();
-            
-            if ((Tag.istag == 1 && isGround) || (Tag.istag == -1 && bungpimmisGround)) //붕핌이도 더블점프!
-            {
-                
-            }
         }
     }
-
 }
 
