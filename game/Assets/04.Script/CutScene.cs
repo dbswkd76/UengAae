@@ -11,6 +11,7 @@ public class CutScene : MonoBehaviour
     public void SceneChangeRound1_1()
     {
         SceneManager.LoadScene("1-1");
+        
     }
     
 
@@ -23,6 +24,9 @@ public class CutScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("1-1");
+        }
     }
 }

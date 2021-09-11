@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
         Clear2_1 = false;
         Clear2_2 = false;
         instance = this;
-        
+        Screen.SetResolution(1280, 720, true);
 
 
     }
