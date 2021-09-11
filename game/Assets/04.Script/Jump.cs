@@ -14,6 +14,7 @@ public class Jump : MonoBehaviour
     [SerializeField] float power;
     [SerializeField] LayerMask islayer;
     public AudioSource diesound;
+    public AudioSource jumpsound;
     Animator anim;
     
 
@@ -84,8 +85,10 @@ public class Jump : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 anim.SetBool("isJumping", true);
+                jumpsound.Play();
 
             }
+            
         }
 
 

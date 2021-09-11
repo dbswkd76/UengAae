@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FadeOutAnim : MonoBehaviour
 {
-    float time;
+    /*float time;
     public float _fadeTime = 1f;
 
 
@@ -19,7 +19,7 @@ public class FadeOutAnim : MonoBehaviour
         else
         {
             time = 0;
-            this.gameObject.SetActive(false);
+          //  this.gameObject.SetActive(false);
         }
         time += Time.deltaTime;
     }
@@ -29,5 +29,5 @@ public class FadeOutAnim : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().color = Color.white;
         this.gameObject.SetActive(true);
-    }
+    }*/
 }

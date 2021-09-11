@@ -10,7 +10,7 @@ public class CutScene : MonoBehaviour
    
     public void SceneChangeRound1_1()
     {
-        SceneManager.LoadScene("튜토리얼");
+        SceneManager.LoadScene("1-1");
     }
     
 

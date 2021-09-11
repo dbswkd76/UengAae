@@ -6,39 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/01.Scene/SelectRound.unity
-    guid: a2a921124210a954eb501dfe7d20398d
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/01.Scene/Round 2.unity
-    guid: 549e7778d20e546488a44c3fbaa90048
-  - enabled: 0
-    path: Assets/01.Scene/Round 3.unity
-    guid: 8611a4192945d4e4bb4abc79a293e62a
+    path: Assets/01.Scene/MainMenu.unity
+    guid: 0b50b6c776dc5b643803699124bb2189
   - enabled: 1
-    path: "Assets/01.Scene/\uD29C\uD1A0\uB9AC\uC5BC.unity"
+    path: Assets/01.Scene/1-1.unity
     guid: 24a1f54ff7dde65469c46e0f122a0e4d
   - enabled: 1
-    path: "Assets/01.Scene/2-2\uB77C\uC6B4\uB4DC.unity"
-    guid: 6e1755aef1e906948bd5444a2df394c8
-  - enabled: 1
-    path: "Assets/01.Scene/\uC724\uC7A52\uB77C-2.unity"
-    guid: e61c5124e686ed54b98264e311d6ac39
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: "Assets/01.Scene/\uBA38\uD788 2.unity"
+    path: Assets/01.Scene/1-2.unity
     guid: 055c48fe9508387429a7a0b9426b5e01
   - enabled: 1
-    path: "Assets/01.Scene/\uC900\uC11D\uBCF5\uC0AC(\uB77C\uC6B4\uB4DC1).unity"
-    guid: 5e478a57d6c23994eada60cb3be9e476
+    path: Assets/01.Scene/2-1.unity
+    guid: e61c5124e686ed54b98264e311d6ac39
+  - enabled: 1
+    path: Assets/01.Scene/2-2.unity
+    guid: 6e1755aef1e906948bd5444a2df394c8
   - enabled: 1
     path: "Assets/01.Scene/\uC900\uC11D.unity"
     guid: 6cfd30d81248b3d4797bdff0cf240893
-  - enabled: 1
-    path: "Assets/01.Scene/\uC724\uC7A52\uB77C.unity"
-    guid: d682723735e3cc240ab2f49bbd904e5b
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

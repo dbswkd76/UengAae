@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
 
     }
     #endregion
-    static public bool playerDie = false;
+    static public bool playerDie;
     public Slider progressbar;
     public float MaxValue;
     public float FillSpeed;
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
     
     public void SceneChangeTutorial()
     {
-        SceneManager.LoadScene("튜토리얼");
+        SceneManager.LoadScene("1-1");
     }
     public void SceneChangeCutScene()
     {
@@ -72,23 +72,23 @@ public class GameManager : MonoBehaviour
 
     public void SceneChangeRound1_1()
     {
-        SceneManager.LoadScene("튜토리얼");
+        SceneManager.LoadScene("1-1");
     }
     public void SceneChangeRound1_2()
     {
-        SceneManager.LoadScene("머히 2");
+        SceneManager.LoadScene("1-2");
     }
     public void SceneChangeRound2_1()
     {
         if (Clear1_1 == true&&Clear1_2==true)
-            SceneManager.LoadScene("윤장2라-2");
+            SceneManager.LoadScene("2-1");
         else
             NotCleared();
     }
     public void SceneChangeRound2_2()
     {
         if (Clear1_1 == true && Clear1_2 == true)
-            SceneManager.LoadScene("2-2라운드");
+            SceneManager.LoadScene("2-2");
          else
             NotCleared();
     }
@@ -106,19 +106,19 @@ public class GameManager : MonoBehaviour
     {
         Clearpanel.SetActive(true);
         progressbar.gameObject.SetActive(false);
-        if (SceneManager.GetActiveScene().name == "튜토리얼")
+        if (SceneManager.GetActiveScene().name == "1-1")
         {
             Clear1_1 = true;
         }
-        if (SceneManager.GetActiveScene().name == "머히 2")
+        if (SceneManager.GetActiveScene().name == "1-2")
         {
             Clear1_2 = true;
         }
-        if (SceneManager.GetActiveScene().name == "윤장2라-2")
+        if (SceneManager.GetActiveScene().name == "2-1")
         {
             Clear2_1 = true;
         }
-        if (SceneManager.GetActiveScene().name == "2-2라운드")
+        if (SceneManager.GetActiveScene().name == "2-2")
         {
             Clear2_2 = true;
         }
@@ -200,10 +200,10 @@ public class GameManager : MonoBehaviour
     {
         MaxValue = 100;
         progressbar.gameObject.SetActive(true);
-
-        if (SceneManager.GetActiveScene().name == "튜토리얼")
+        playerDie = false;
+        if (SceneManager.GetActiveScene().name == "1-1")
             FillSpeed = 1.4f;
-        if (SceneManager.GetActiveScene().name == "윤장2라-2"|| SceneManager.GetActiveScene().name == "2-2라운드"|| SceneManager.GetActiveScene().name == "머히 2")
+        if (SceneManager.GetActiveScene().name == "2-1"|| SceneManager.GetActiveScene().name == "2-2"|| SceneManager.GetActiveScene().name == "1-2")
             FillSpeed = 0.97f;
     }
 
@@ -225,12 +225,12 @@ public class GameManager : MonoBehaviour
             OptionPanelActive = false;
         }
         
-        if (SceneManager.GetActiveScene().name == "윤장2라-2")
+        if (SceneManager.GetActiveScene().name == "2-1")
         {
             Clear1_1 = true;
             Clear1_2 = true;
         }
-        if (SceneManager.GetActiveScene().name == "2-2라운드")
+        if (SceneManager.GetActiveScene().name == "2-2")
         {
             Clear1_1 = true;
             Clear1_2 = true;
