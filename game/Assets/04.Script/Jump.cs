@@ -16,6 +16,9 @@ public class Jump : MonoBehaviour
     public AudioSource diesound;
     public AudioSource jumpsound;
     Animator anim;
+
+    public AudioSource mySfx;
+    public AudioClip jumpSfx;
     
 
     public int jumpCount;
@@ -85,14 +88,17 @@ public class Jump : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 anim.SetBool("isJumping", true);
-                jumpsound.Play();
-
+                
             }
-            
+            if (Input.GetKeyDown(KeyCode.Space) && anim.GetBool("isJumping"))
+            {
+                JumpSound();
+            }
         }
-
-
-
+    }
+    public void JumpSound()
+    {
+        mySfx.PlayOneShot(jumpSfx);
     }
     void OnCollisionEnter2D(Collision2D collision)
 
