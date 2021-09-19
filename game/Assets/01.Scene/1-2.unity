@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 8768669}
   - component: {fileID: 8768668}
   - component: {fileID: 8768667}
+  - component: {fileID: 8768670}
   m_Layer: 0
   m_Name: slime1 (8)
   m_TagString: Obstacle
@@ -302,7 +303,7 @@ Transform:
   m_GameObject: {fileID: 8768665}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 319.58, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 112
@@ -386,6 +387,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8768670
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8768665}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &9910339
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +418,7 @@ GameObject:
   - component: {fileID: 9910343}
   - component: {fileID: 9910342}
   - component: {fileID: 9910341}
+  - component: {fileID: 9910344}
   m_Layer: 0
   m_Name: slime1 (28)
   m_TagString: Obstacle
@@ -413,8 +434,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9910339}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 347.98, y: -2.97, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 348.019, y: -3.066, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 130
@@ -498,6 +519,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &9910344
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9910339}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &18166222
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +934,7 @@ GameObject:
   - component: {fileID: 35933173}
   - component: {fileID: 35933172}
   - component: {fileID: 35933171}
+  - component: {fileID: 35933174}
   m_Layer: 0
   m_Name: seagull1 (14)
   m_TagString: Obstacle
@@ -1032,6 +1073,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &35933174
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35933169}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &41204603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,8 +1902,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101666482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 142.47, y: -2.93, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 142.47, y: -2.98, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 45
@@ -1957,7 +2017,7 @@ GameObject:
   - component: {fileID: 102833785}
   m_Layer: 0
   m_Name: block (3)
-  m_TagString: Obstacle
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2311,7 +2371,7 @@ Transform:
   m_GameObject: {fileID: 113324510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 99.6206, y: -2.9066472, z: 2.4455943}
-  m_LocalScale: {x: 0.28558102, y: 0.2933909, z: 0.30640393}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.30640393}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 31
@@ -2658,6 +2718,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &123193254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8549690554342091850, guid: 067a6861c10264228ac318bdf004c046,
+    type: 3}
+  m_PrefabInstance: {fileID: 8549690553098193851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &123193259
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123193254}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &129153259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,6 +2908,7 @@ GameObject:
   - component: {fileID: 142292108}
   - component: {fileID: 142292107}
   - component: {fileID: 142292106}
+  - component: {fileID: 142292109}
   m_Layer: 0
   m_Name: slime1 (26)
   m_TagString: Obstacle
@@ -2838,8 +2924,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142292104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 347.51, y: -2.98, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 347.549, y: -3.076, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 128
@@ -2923,6 +3009,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &142292109
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142292104}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &159562685
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,6 +3317,7 @@ GameObject:
   - component: {fileID: 164238715}
   - component: {fileID: 164238714}
   - component: {fileID: 164238713}
+  - component: {fileID: 164238716}
   m_Layer: 0
   m_Name: slime1 (11)
   m_TagString: Obstacle
@@ -3228,7 +3334,7 @@ Transform:
   m_GameObject: {fileID: 164238711}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 323.47, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 113
@@ -3312,6 +3418,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &164238716
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164238711}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &165547116
 GameObject:
   m_ObjectHideFlags: 0
@@ -3486,8 +3611,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172582168}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 237.802, y: -2.484, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 237.82199, y: -2.69, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 74
@@ -3744,8 +3869,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175048714}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 243.88, y: -2.493, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 243.89, y: -2.69, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 78
@@ -3909,6 +4034,7 @@ GameObject:
   - component: {fileID: 177252352}
   - component: {fileID: 177252351}
   - component: {fileID: 177252350}
+  - component: {fileID: 177252353}
   m_Layer: 0
   m_Name: slime1 (33)
   m_TagString: Obstacle
@@ -3925,7 +4051,7 @@ Transform:
   m_GameObject: {fileID: 177252348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 361.59, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 135
@@ -4009,6 +4135,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &177252353
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177252348}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &177977017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4099,6 +4244,7 @@ GameObject:
   - component: {fileID: 199709946}
   - component: {fileID: 199709945}
   - component: {fileID: 199709944}
+  - component: {fileID: 199709947}
   m_Layer: 0
   m_Name: slime1 (5)
   m_TagString: Obstacle
@@ -4115,7 +4261,7 @@ Transform:
   m_GameObject: {fileID: 199709942}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 315.51, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 109
@@ -4199,6 +4345,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &199709947
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199709942}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &214536654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4483,6 +4648,7 @@ GameObject:
   - component: {fileID: 227292336}
   - component: {fileID: 227292335}
   - component: {fileID: 227292334}
+  - component: {fileID: 227292337}
   m_Layer: 0
   m_Name: slime1 (31)
   m_TagString: Obstacle
@@ -4499,7 +4665,7 @@ Transform:
   m_GameObject: {fileID: 227292332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 353.49, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 133
@@ -4583,6 +4749,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &227292337
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227292332}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &227857133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4684,8 +4869,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251914290}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 231.6, y: -2.92, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 231.62, y: -3.01, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 71
@@ -4797,6 +4982,7 @@ GameObject:
   - component: {fileID: 262321024}
   - component: {fileID: 262321023}
   - component: {fileID: 262321022}
+  - component: {fileID: 262321025}
   m_Layer: 0
   m_Name: slime1 (38)
   m_TagString: Obstacle
@@ -4813,7 +4999,7 @@ Transform:
   m_GameObject: {fileID: 262321020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 381.54, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 140
@@ -4897,6 +5083,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &262321025
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262321020}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &285713201
 GameObject:
   m_ObjectHideFlags: 0
@@ -5289,6 +5494,7 @@ GameObject:
   - component: {fileID: 319317740}
   - component: {fileID: 319317739}
   - component: {fileID: 319317738}
+  - component: {fileID: 319317741}
   m_Layer: 0
   m_Name: segull (3)
   m_TagString: Obstacle
@@ -5305,7 +5511,7 @@ Transform:
   m_GameObject: {fileID: 319317736}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 79.399994, y: 0.12099995, z: 2.4455943}
-  m_LocalScale: {x: 0.28832614, y: 0.37216085, z: 0.3667522}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.3667522}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 25
@@ -5423,6 +5629,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &319317741
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319317736}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &319710121
 GameObject:
   m_ObjectHideFlags: 0
@@ -5437,7 +5662,7 @@ GameObject:
   - component: {fileID: 319710122}
   m_Layer: 0
   m_Name: block
-  m_TagString: Obstacle
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5577,8 +5802,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328888034}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 243.58, y: -2.96, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 243.6, y: -3.05, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 75
@@ -5912,6 +6137,7 @@ GameObject:
   - component: {fileID: 347710477}
   - component: {fileID: 347710476}
   - component: {fileID: 347710475}
+  - component: {fileID: 347710478}
   m_Layer: 0
   m_Name: seagull1 (8)
   m_TagString: Obstacle
@@ -6050,6 +6276,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &347710478
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347710473}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &351044008
 GameObject:
   m_ObjectHideFlags: 0
@@ -6739,6 +6984,7 @@ GameObject:
   - component: {fileID: 377488164}
   - component: {fileID: 377488163}
   - component: {fileID: 377488165}
+  - component: {fileID: 377488166}
   m_Layer: 0
   m_Name: segull
   m_TagString: Obstacle
@@ -6755,7 +7001,7 @@ Transform:
   m_GameObject: {fileID: 377488161}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 67.576, y: 0.12699994, z: 2.4455943}
-  m_LocalScale: {x: 0.31807473, y: 0.31266576, z: 0.3667522}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.3667522}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 22
@@ -6873,6 +7119,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObstacleSpeed: 4
+--- !u!95 &377488166
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377488161}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &379714970
 GameObject:
   m_ObjectHideFlags: 0
@@ -6885,6 +7150,7 @@ GameObject:
   - component: {fileID: 379714974}
   - component: {fileID: 379714973}
   - component: {fileID: 379714972}
+  - component: {fileID: 379714975}
   m_Layer: 0
   m_Name: segull (4)
   m_TagString: Obstacle
@@ -6901,7 +7167,7 @@ Transform:
   m_GameObject: {fileID: 379714970}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 83.576, y: 0.08599995, z: 2.4455943}
-  m_LocalScale: {x: 0.26830643, y: 0.38459194, z: 0.3521401}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.3521401}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 26
@@ -7019,6 +7285,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &379714975
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379714970}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &387371838
 GameObject:
   m_ObjectHideFlags: 0
@@ -7334,6 +7619,7 @@ GameObject:
   - component: {fileID: 402782516}
   - component: {fileID: 402782515}
   - component: {fileID: 402782514}
+  - component: {fileID: 402782517}
   m_Layer: 0
   m_Name: seagull1 (13)
   m_TagString: Obstacle
@@ -7472,6 +7758,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &402782517
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402782512}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &445776570
 GameObject:
   m_ObjectHideFlags: 0
@@ -7484,6 +7789,7 @@ GameObject:
   - component: {fileID: 445776574}
   - component: {fileID: 445776573}
   - component: {fileID: 445776572}
+  - component: {fileID: 445776575}
   m_Layer: 0
   m_Name: segull (2)
   m_TagString: Obstacle
@@ -7500,7 +7806,7 @@ Transform:
   m_GameObject: {fileID: 445776570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 75.471, y: -0.43200004, z: 2.4455943}
-  m_LocalScale: {x: 0.31119615, y: 0.33012646, z: 0.3625784}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.3625784}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 24
@@ -7618,6 +7924,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &445776575
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445776570}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &452485320
 GameObject:
   m_ObjectHideFlags: 0
@@ -7727,7 +8052,7 @@ Transform:
   m_GameObject: {fileID: 459944080}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 170.591, y: 1.7877526, z: 2.4455943}
-  m_LocalScale: {x: 0.46771014, y: 0.5145625, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 56
@@ -8240,6 +8565,7 @@ GameObject:
   - component: {fileID: 489408818}
   - component: {fileID: 489408817}
   - component: {fileID: 489408816}
+  - component: {fileID: 489408819}
   m_Layer: 0
   m_Name: seagull1 (12)
   m_TagString: Obstacle
@@ -8378,6 +8704,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &489408819
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489408814}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &490629423
 GameObject:
   m_ObjectHideFlags: 0
@@ -8390,6 +8735,7 @@ GameObject:
   - component: {fileID: 490629427}
   - component: {fileID: 490629426}
   - component: {fileID: 490629425}
+  - component: {fileID: 490629428}
   m_Layer: 0
   m_Name: seagull1 (16)
   m_TagString: Obstacle
@@ -8406,7 +8752,7 @@ Transform:
   m_GameObject: {fileID: 490629423}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 296.5, y: -0.17, z: 2.4455943}
-  m_LocalScale: {x: 0.297585, y: 0.2509354, z: 0.41088736}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.41088736}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 105
@@ -8528,6 +8874,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &490629428
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490629423}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &495343742
 GameObject:
   m_ObjectHideFlags: 0
@@ -8669,6 +9034,7 @@ GameObject:
   - component: {fileID: 530290155}
   - component: {fileID: 530290154}
   - component: {fileID: 530290153}
+  - component: {fileID: 530290156}
   m_Layer: 0
   m_Name: slime1 (7)
   m_TagString: Obstacle
@@ -8684,8 +9050,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530290151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 315.51, y: -2.57, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 315.51, y: -2.589, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 111
@@ -8769,6 +9135,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &530290156
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530290151}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &531935732
 GameObject:
   m_ObjectHideFlags: 0
@@ -8943,8 +9328,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534879755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 123.65, y: -2.69, z: 2.4455943}
-  m_LocalScale: {x: 0.7121647, y: 0.73860604, z: 0.6051904}
+  m_LocalPosition: {x: 123.71, y: -2.89, z: 2.4455943}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.6051904}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 39
@@ -10300,8 +10685,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602439271}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 237.521, y: -2.95, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 237.54099, y: -3.04, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 72
@@ -10699,6 +11084,7 @@ GameObject:
   - component: {fileID: 621002637}
   - component: {fileID: 621002636}
   - component: {fileID: 621002635}
+  - component: {fileID: 621002638}
   m_Layer: 0
   m_Name: slime1 (3)
   m_TagString: Obstacle
@@ -10715,7 +11101,7 @@ Transform:
   m_GameObject: {fileID: 621002633}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 307.51, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 107
@@ -10799,6 +11185,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &621002638
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621002633}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &623015583
 GameObject:
   m_ObjectHideFlags: 0
@@ -11413,6 +11818,7 @@ GameObject:
   - component: {fileID: 687823564}
   - component: {fileID: 687823563}
   - component: {fileID: 687823562}
+  - component: {fileID: 687823565}
   m_Layer: 0
   m_Name: slime1 (25)
   m_TagString: Obstacle
@@ -11428,8 +11834,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687823560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 347.04, y: -2.99, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 347.079, y: -3.086, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 127
@@ -11513,6 +11919,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &687823565
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687823560}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &710554153
 GameObject:
   m_ObjectHideFlags: 0
@@ -11750,7 +12175,7 @@ Transform:
   m_GameObject: {fileID: 722270230}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 192.47, y: 0.6, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 61
@@ -12115,8 +12540,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740137662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 155.05, y: -2.95, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 155.06001, y: -2.99, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 49
@@ -13044,6 +13469,7 @@ GameObject:
   - component: {fileID: 774465089}
   - component: {fileID: 774465088}
   - component: {fileID: 774465087}
+  - component: {fileID: 774465090}
   m_Layer: 0
   m_Name: slime1 (16)
   m_TagString: Obstacle
@@ -13059,8 +13485,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774465085}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 331.52, y: -2.78, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 331.53, y: -2.819, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 118
@@ -13144,6 +13570,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &774465090
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774465085}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &787605100
 GameObject:
   m_ObjectHideFlags: 0
@@ -13284,6 +13729,7 @@ GameObject:
   - component: {fileID: 793634135}
   - component: {fileID: 793634134}
   - component: {fileID: 793634133}
+  - component: {fileID: 793634136}
   m_Layer: 0
   m_Name: seagull1 (3)
   m_TagString: Obstacle
@@ -13422,6 +13868,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &793634136
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793634131}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &795892454
 GameObject:
   m_ObjectHideFlags: 0
@@ -13434,6 +13899,7 @@ GameObject:
   - component: {fileID: 795892458}
   - component: {fileID: 795892457}
   - component: {fileID: 795892456}
+  - component: {fileID: 795892459}
   m_Layer: 0
   m_Name: slime1 (15)
   m_TagString: Obstacle
@@ -13450,7 +13916,7 @@ Transform:
   m_GameObject: {fileID: 795892454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 303.59, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 117
@@ -13534,6 +14000,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &795892459
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795892454}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &805156365
 GameObject:
   m_ObjectHideFlags: 0
@@ -13784,6 +14269,7 @@ GameObject:
   - component: {fileID: 809540956}
   - component: {fileID: 809540955}
   - component: {fileID: 809540954}
+  - component: {fileID: 809540957}
   m_Layer: 0
   m_Name: slime1 (24)
   m_TagString: Obstacle
@@ -13799,8 +14285,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809540952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 343.54, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 343.54, y: -3.078, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 126
@@ -13884,6 +14370,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &809540957
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809540952}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &809599897
 GameObject:
   m_ObjectHideFlags: 0
@@ -13989,8 +14494,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814164286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 119.54, y: -2.91, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 119.52, y: -3.06, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 38
@@ -14343,6 +14848,7 @@ GameObject:
   - component: {fileID: 838803633}
   - component: {fileID: 838803632}
   - component: {fileID: 838803631}
+  - component: {fileID: 838803634}
   m_Layer: 0
   m_Name: segull (1)
   m_TagString: Obstacle
@@ -14359,7 +14865,7 @@ Transform:
   m_GameObject: {fileID: 838803629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 71.492, y: 0.10399994, z: 2.4455943}
-  m_LocalScale: {x: 0.28994137, y: 0.29264498, z: 0.3521401}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.3521401}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 23
@@ -14477,6 +14983,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &838803634
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838803629}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &838925691
 GameObject:
   m_ObjectHideFlags: 0
@@ -15058,6 +15583,7 @@ GameObject:
   - component: {fileID: 857709437}
   - component: {fileID: 857709436}
   - component: {fileID: 857709435}
+  - component: {fileID: 857709438}
   m_Layer: 0
   m_Name: seagull1 (10)
   m_TagString: Obstacle
@@ -15196,6 +15722,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &857709438
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857709433}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &860300170
 GameObject:
   m_ObjectHideFlags: 0
@@ -15399,7 +15944,7 @@ Transform:
   m_GameObject: {fileID: 871724000}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 200.49, y: 0.61, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 63
@@ -15525,6 +16070,7 @@ GameObject:
   - component: {fileID: 876648922}
   - component: {fileID: 876648921}
   - component: {fileID: 876648920}
+  - component: {fileID: 876648923}
   m_Layer: 0
   m_Name: slime1 (36)
   m_TagString: Obstacle
@@ -15541,7 +16087,7 @@ Transform:
   m_GameObject: {fileID: 876648918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 373.53, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 138
@@ -15625,6 +16171,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &876648923
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876648918}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &895411427
 GameObject:
   m_ObjectHideFlags: 0
@@ -15639,7 +16204,7 @@ GameObject:
   - component: {fileID: 895411428}
   m_Layer: 0
   m_Name: block (2)
-  m_TagString: Obstacle
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15764,6 +16329,7 @@ GameObject:
   - component: {fileID: 898521247}
   - component: {fileID: 898521246}
   - component: {fileID: 898521245}
+  - component: {fileID: 898521248}
   m_Layer: 0
   m_Name: slime1 (22)
   m_TagString: Obstacle
@@ -15779,8 +16345,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898521243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 339.49, y: -2.79, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 339.5, y: -2.838, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 124
@@ -15864,6 +16430,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &898521248
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898521243}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &909729131
 GameObject:
   m_ObjectHideFlags: 0
@@ -16139,8 +16724,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914855295}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 238.072, y: -2.95, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 238.092, y: -3.04, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 73
@@ -16393,7 +16978,7 @@ Transform:
   m_GameObject: {fileID: 916731167}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 268.45, y: -2.8322473, z: 2.4455943}
-  m_LocalScale: {x: 0.48665062, y: 0.50849086, z: 0.60519}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.60519}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 100
@@ -16410,6 +16995,7 @@ GameObject:
   - component: {fileID: 925276350}
   - component: {fileID: 925276349}
   - component: {fileID: 925276348}
+  - component: {fileID: 925276351}
   m_Layer: 0
   m_Name: seagull1 (5)
   m_TagString: Obstacle
@@ -16548,6 +17134,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &925276351
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925276346}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &934208916
 GameObject:
   m_ObjectHideFlags: 0
@@ -16764,6 +17369,7 @@ GameObject:
   - component: {fileID: 946158855}
   - component: {fileID: 946158854}
   - component: {fileID: 946158853}
+  - component: {fileID: 946158856}
   m_Layer: 0
   m_Name: slime1 (20)
   m_TagString: Obstacle
@@ -16779,8 +17385,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946158851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 335.7, y: -2.97, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 335.7, y: -3.047, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 122
@@ -16864,6 +17470,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &946158856
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946158851}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &946308076
 GameObject:
   m_ObjectHideFlags: 0
@@ -17244,6 +17869,7 @@ GameObject:
   - component: {fileID: 962922290}
   - component: {fileID: 962922289}
   - component: {fileID: 962922288}
+  - component: {fileID: 962922291}
   m_Layer: 0
   m_Name: seagull1 (17)
   m_TagString: Obstacle
@@ -17259,7 +17885,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962922286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 301.05, y: -0.36, z: 2.4455943}
+  m_LocalPosition: {x: 301.84, y: -0.32, z: 2.4455943}
   m_LocalScale: {x: 0.5695041, y: 0.46188298, z: 0.58078766}
   m_Children: []
   m_Father: {fileID: 2016153664}
@@ -17382,6 +18008,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &962922291
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962922286}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &974928930
 GameObject:
   m_ObjectHideFlags: 0
@@ -18914,6 +19559,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069804222}
   m_CullTransparentMesh: 0
+--- !u!1 &1070200871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8549690554012375141, guid: 067a6861c10264228ac318bdf004c046,
+    type: 3}
+  m_PrefabInstance: {fileID: 8549690553098193851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1070200876
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070200871}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1073457196
 GameObject:
   m_ObjectHideFlags: 0
@@ -19134,7 +19804,7 @@ Transform:
   m_GameObject: {fileID: 1087096782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 211.52, y: 0.64, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 64
@@ -19703,8 +20373,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121761496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 136.57, y: -2.94, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 136.57, y: -2.99, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 43
@@ -20043,6 +20713,7 @@ GameObject:
   - component: {fileID: 1161653225}
   - component: {fileID: 1161653224}
   - component: {fileID: 1161653223}
+  - component: {fileID: 1161653226}
   m_Layer: 0
   m_Name: slime1 (30)
   m_TagString: Obstacle
@@ -20058,8 +20729,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161653221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 347.57, y: -2.56, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 347.609, y: -2.685, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 132
@@ -20143,6 +20814,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1161653226
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161653221}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1166085699
 GameObject:
   m_ObjectHideFlags: 0
@@ -20170,8 +20860,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166085699}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 140, y: -2.92, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 140, y: -2.97, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 44
@@ -20508,6 +21198,7 @@ GameObject:
   - component: {fileID: 1183587794}
   - component: {fileID: 1183587793}
   - component: {fileID: 1183587792}
+  - component: {fileID: 1183587795}
   m_Layer: 0
   m_Name: slime1 (12)
   m_TagString: Obstacle
@@ -20523,8 +21214,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183587790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 327.58, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 327.57, y: -3.04, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 114
@@ -20608,6 +21299,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1183587795
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183587790}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1197181280
 GameObject:
   m_ObjectHideFlags: 0
@@ -20620,6 +21330,7 @@ GameObject:
   - component: {fileID: 1197181284}
   - component: {fileID: 1197181283}
   - component: {fileID: 1197181282}
+  - component: {fileID: 1197181285}
   m_Layer: 0
   m_Name: slime1 (27)
   m_TagString: Obstacle
@@ -20635,8 +21346,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197181280}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 347.3, y: -2.78, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 347.339, y: -2.876, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 129
@@ -20720,6 +21431,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1197181285
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197181280}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1218700101
 GameObject:
   m_ObjectHideFlags: 0
@@ -20747,8 +21477,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218700101}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 227.6, y: -2.93, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 227.62, y: -3.02, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 70
@@ -21015,7 +21745,7 @@ GameObject:
   - component: {fileID: 1230596242}
   m_Layer: 0
   m_Name: block (1)
-  m_TagString: Obstacle
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21378,8 +22108,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237812587}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 244.73, y: -2.969, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 244.74998, y: -3.059, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 77
@@ -21507,7 +22237,7 @@ Transform:
   m_GameObject: {fileID: 1244697365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 222.36, y: 0.87, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 68
@@ -22038,8 +22768,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268834850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 127.48151, y: -2.9407473, z: 2.4455943}
-  m_LocalScale: {x: 0.35174522, y: 0.35174522, z: 0.35174522}
+  m_LocalPosition: {x: 127.831, y: -2.933, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.26445323}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 40
@@ -22072,7 +22802,7 @@ Transform:
   m_GameObject: {fileID: 1272052557}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 222, y: 0.01, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 67
@@ -22669,6 +23399,7 @@ GameObject:
   - component: {fileID: 1295839178}
   - component: {fileID: 1295839177}
   - component: {fileID: 1295839176}
+  - component: {fileID: 1295839179}
   m_Layer: 0
   m_Name: poisonslime2
   m_TagString: Obstacle
@@ -22684,8 +23415,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295839174}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.473, y: -2.96, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.473, y: -3.05, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 29
@@ -22789,6 +23520,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1295839179
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295839174}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1301680477
 GameObject:
   m_ObjectHideFlags: 0
@@ -22954,6 +23704,7 @@ GameObject:
   - component: {fileID: 1305647258}
   - component: {fileID: 1305647257}
   - component: {fileID: 1305647256}
+  - component: {fileID: 1305647259}
   m_Layer: 0
   m_Name: slime1 (29)
   m_TagString: Obstacle
@@ -22969,8 +23720,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305647254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 347.78, y: -2.77, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 347.819, y: -2.866, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 131
@@ -23054,6 +23805,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1305647259
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305647254}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1313174645
 GameObject:
   m_ObjectHideFlags: 0
@@ -23066,6 +23836,7 @@ GameObject:
   - component: {fileID: 1313174649}
   - component: {fileID: 1313174648}
   - component: {fileID: 1313174647}
+  - component: {fileID: 1313174650}
   m_Layer: 0
   m_Name: seagull1 (11)
   m_TagString: Obstacle
@@ -23204,6 +23975,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1313174650
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313174645}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1324093349
 GameObject:
   m_ObjectHideFlags: 0
@@ -23346,6 +24136,7 @@ GameObject:
   - component: {fileID: 1326211471}
   - component: {fileID: 1326211470}
   - component: {fileID: 1326211469}
+  - component: {fileID: 1326211472}
   m_Layer: 0
   m_Name: slime1 (32)
   m_TagString: Obstacle
@@ -23362,7 +24153,7 @@ Transform:
   m_GameObject: {fileID: 1326211467}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 357.57, y: -3.05, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 134
@@ -23446,6 +24237,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1326211472
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326211467}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1327801467
 GameObject:
   m_ObjectHideFlags: 0
@@ -23792,8 +24602,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349272065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 157.48, y: -2.99, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 157.49, y: -3.03, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 48
@@ -24286,6 +25096,7 @@ GameObject:
   - component: {fileID: 1363274429}
   - component: {fileID: 1363274428}
   - component: {fileID: 1363274427}
+  - component: {fileID: 1363274430}
   m_Layer: 0
   m_Name: slime1 (18)
   m_TagString: Obstacle
@@ -24301,8 +25112,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363274425}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 332, y: -2.77, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 332.01, y: -2.809, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 120
@@ -24386,6 +25197,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1363274430
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363274425}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1365364462
 GameObject:
   m_ObjectHideFlags: 0
@@ -24528,6 +25358,7 @@ GameObject:
   - component: {fileID: 1381954808}
   - component: {fileID: 1381954807}
   - component: {fileID: 1381954806}
+  - component: {fileID: 1381954809}
   m_Layer: 0
   m_Name: slime1 (23)
   m_TagString: Obstacle
@@ -24543,8 +25374,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381954804}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 339.473, y: -2.547, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 339.502, y: -2.634, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 125
@@ -24628,6 +25459,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1381954809
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381954804}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1396370494
 GameObject:
   m_ObjectHideFlags: 0
@@ -25192,7 +26042,7 @@ GameObject:
   - component: {fileID: 1428998355}
   m_Layer: 0
   m_Name: block (4)
-  m_TagString: Obstacle
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25447,6 +26297,7 @@ GameObject:
   - component: {fileID: 1434202311}
   - component: {fileID: 1434202310}
   - component: {fileID: 1434202309}
+  - component: {fileID: 1434202312}
   m_Layer: 0
   m_Name: seagull1 (15)
   m_TagString: Obstacle
@@ -25463,7 +26314,7 @@ Transform:
   m_GameObject: {fileID: 1434202307}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 292.53, y: -0.17, z: 2.4455943}
-  m_LocalScale: {x: 0.29891258, y: 0.25205484, z: 0.41272035}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.41272035}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 104
@@ -25585,6 +26436,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1434202312
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434202307}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1450170598
 GameObject:
   m_ObjectHideFlags: 0
@@ -26521,6 +27391,7 @@ GameObject:
   - component: {fileID: 1508878927}
   - component: {fileID: 1508878926}
   - component: {fileID: 1508878925}
+  - component: {fileID: 1508878928}
   m_Layer: 0
   m_Name: slime1 (13)
   m_TagString: Obstacle
@@ -26537,7 +27408,7 @@ Transform:
   m_GameObject: {fileID: 1508878923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 331.26, y: -2.99, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 115
@@ -26621,6 +27492,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1508878928
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508878923}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1509551237
 GameObject:
   m_ObjectHideFlags: 0
@@ -26633,6 +27523,7 @@ GameObject:
   - component: {fileID: 1509551241}
   - component: {fileID: 1509551240}
   - component: {fileID: 1509551239}
+  - component: {fileID: 1509551242}
   m_Layer: 0
   m_Name: seagull1 (9)
   m_TagString: Obstacle
@@ -26771,6 +27662,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1509551242
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509551237}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1510270291
 GameObject:
   m_ObjectHideFlags: 0
@@ -26862,6 +27772,7 @@ GameObject:
   - component: {fileID: 1510540114}
   - component: {fileID: 1510540113}
   - component: {fileID: 1510540112}
+  - component: {fileID: 1510540115}
   m_Layer: 0
   m_Name: slime1 (4)
   m_TagString: Obstacle
@@ -26878,7 +27789,7 @@ Transform:
   m_GameObject: {fileID: 1510540110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 311.49, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 108
@@ -26962,6 +27873,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1510540115
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510540110}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1522542108
 GameObject:
   m_ObjectHideFlags: 0
@@ -26974,6 +27904,7 @@ GameObject:
   - component: {fileID: 1522542112}
   - component: {fileID: 1522542111}
   - component: {fileID: 1522542110}
+  - component: {fileID: 1522542113}
   m_Layer: 0
   m_Name: slime1 (17)
   m_TagString: Obstacle
@@ -26990,7 +27921,7 @@ Transform:
   m_GameObject: {fileID: 1522542108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 332.2, y: -2.97, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 119
@@ -27074,6 +28005,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1522542113
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522542108}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1539797976
 GameObject:
   m_ObjectHideFlags: 0
@@ -27181,6 +28131,7 @@ GameObject:
   - component: {fileID: 1549003187}
   - component: {fileID: 1549003186}
   - component: {fileID: 1549003185}
+  - component: {fileID: 1549003188}
   m_Layer: 0
   m_Name: poisonslime3
   m_TagString: Obstacle
@@ -27196,8 +28147,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549003183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.149, y: -2.98, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.14, y: -3.07, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 30
@@ -27301,6 +28252,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1549003188
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549003183}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1553979144
 GameObject:
   m_ObjectHideFlags: 0
@@ -27622,7 +28592,7 @@ Transform:
   m_GameObject: {fileID: 1567721135}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 171.12, y: 1.56, z: 2.4455943}
-  m_LocalScale: {x: 0.46771014, y: 0.5145625, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 57
@@ -27810,6 +28780,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570721227}
   m_CullTransparentMesh: 0
+--- !u!1 &1572529240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8549690554089026792, guid: 067a6861c10264228ac318bdf004c046,
+    type: 3}
+  m_PrefabInstance: {fileID: 8549690553098193851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1572529245
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572529240}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1590997981
 GameObject:
   m_ObjectHideFlags: 0
@@ -28053,6 +29048,7 @@ GameObject:
   - component: {fileID: 1608413028}
   - component: {fileID: 1608413027}
   - component: {fileID: 1608413026}
+  - component: {fileID: 1608413029}
   m_Layer: 0
   m_Name: slime1 (37)
   m_TagString: Obstacle
@@ -28069,7 +29065,7 @@ Transform:
   m_GameObject: {fileID: 1608413024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 377.52, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 139
@@ -28153,6 +29149,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1608413029
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608413024}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1610320732
 GameObject:
   m_ObjectHideFlags: 0
@@ -28180,8 +29195,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610320732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 244.16, y: -2.97, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 244.18, y: -3.06, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 76
@@ -28428,6 +29443,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1652716521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8549690554429803150, guid: 067a6861c10264228ac318bdf004c046,
+    type: 3}
+  m_PrefabInstance: {fileID: 8549690553098193851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1652716526
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652716521}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1665348644
 GameObject:
   m_ObjectHideFlags: 0
@@ -29017,6 +30057,31 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1722583818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8549690553242052635, guid: 067a6861c10264228ac318bdf004c046,
+    type: 3}
+  m_PrefabInstance: {fileID: 8549690553098193851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1722583823
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722583818}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1723598866
 GameObject:
   m_ObjectHideFlags: 0
@@ -29045,7 +30110,7 @@ Transform:
   m_GameObject: {fileID: 1723598866}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 166.43, y: 1.82, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 55
@@ -29187,7 +30252,7 @@ Transform:
   m_GameObject: {fileID: 1744169402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 174.61, y: 1.85, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 58
@@ -29328,8 +30393,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745635812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 247.53, y: -2.911, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 247.54999, y: -3.001, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 80
@@ -29515,6 +30580,7 @@ GameObject:
   - component: {fileID: 1752050603}
   - component: {fileID: 1752050602}
   - component: {fileID: 1752050601}
+  - component: {fileID: 1752050604}
   m_Layer: 0
   m_Name: slime1 (34)
   m_TagString: Obstacle
@@ -29531,7 +30597,7 @@ Transform:
   m_GameObject: {fileID: 1752050599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 365.55, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 136
@@ -29615,6 +30681,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1752050604
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752050599}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1755148210
 GameObject:
   m_ObjectHideFlags: 0
@@ -29760,6 +30845,7 @@ GameObject:
   - component: {fileID: 1756356197}
   - component: {fileID: 1756356196}
   - component: {fileID: 1756356195}
+  - component: {fileID: 1756356198}
   m_Layer: 0
   m_Name: seagull1 (7)
   m_TagString: Obstacle
@@ -29898,6 +30984,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1756356198
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756356193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1759457279
 GameObject:
   m_ObjectHideFlags: 0
@@ -30168,6 +31273,7 @@ GameObject:
   - component: {fileID: 1764951699}
   - component: {fileID: 1764951698}
   - component: {fileID: 1764951697}
+  - component: {fileID: 1764951700}
   m_Layer: 0
   m_Name: slime1 (35)
   m_TagString: Obstacle
@@ -30184,7 +31290,7 @@ Transform:
   m_GameObject: {fileID: 1764951695}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 369.44, y: -3.03, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 137
@@ -30268,6 +31374,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1764951700
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764951695}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1770584448
 GameObject:
   m_ObjectHideFlags: 0
@@ -30570,6 +31695,7 @@ GameObject:
   - component: {fileID: 1805008235}
   - component: {fileID: 1805008234}
   - component: {fileID: 1805008233}
+  - component: {fileID: 1805008236}
   m_Layer: 0
   m_Name: slime1 (14)
   m_TagString: Obstacle
@@ -30586,7 +31712,7 @@ Transform:
   m_GameObject: {fileID: 1805008231}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 331.73, y: -2.98, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 116
@@ -30670,6 +31796,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1805008236
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805008231}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1812003026
 GameObject:
   m_ObjectHideFlags: 0
@@ -30698,7 +31843,7 @@ Transform:
   m_GameObject: {fileID: 1812003026}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 182.55, y: 1.92, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 60
@@ -31208,6 +32353,7 @@ GameObject:
   - component: {fileID: 1840319928}
   - component: {fileID: 1840319927}
   - component: {fileID: 1840319926}
+  - component: {fileID: 1840319929}
   m_Layer: 0
   m_Name: seagull1 (4)
   m_TagString: Obstacle
@@ -31346,6 +32492,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1840319929
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840319924}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1844929913
 GameObject:
   m_ObjectHideFlags: 0
@@ -31846,7 +33011,7 @@ Transform:
   m_GameObject: {fileID: 1863506165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 221.35, y: 0.51, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 66
@@ -32271,7 +33436,7 @@ Transform:
   m_GameObject: {fileID: 1872601431}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 196.5, y: 0.59, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 62
@@ -32545,8 +33710,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882242074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 223.62, y: -2.92, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 223.63998, y: -3.01, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 69
@@ -33192,7 +34357,7 @@ Transform:
   m_GameObject: {fileID: 1909583730}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 115.54, y: -3.02, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 37
@@ -33315,6 +34480,7 @@ GameObject:
   - component: {fileID: 1915888529}
   - component: {fileID: 1915888528}
   - component: {fileID: 1915888527}
+  - component: {fileID: 1915888530}
   m_Layer: 0
   m_Name: slime1 (6)
   m_TagString: Obstacle
@@ -33330,8 +34496,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915888525}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 315.51, y: -2.8, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 315.51, y: -2.81, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 110
@@ -33415,6 +34581,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1915888530
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915888525}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1917653457
 GameObject:
   m_ObjectHideFlags: 0
@@ -33443,7 +34628,7 @@ Transform:
   m_GameObject: {fileID: 1917653457}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 178.68, y: 1.93, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 59
@@ -34592,8 +35777,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001143069}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 250.551, y: -2.47, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 250.58, y: -2.67, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 82
@@ -34792,6 +35977,7 @@ GameObject:
   - component: {fileID: 2018163244}
   - component: {fileID: 2018163243}
   - component: {fileID: 2018163242}
+  - component: {fileID: 2018163245}
   m_Layer: 0
   m_Name: slime1 (19)
   m_TagString: Obstacle
@@ -34807,8 +35993,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018163240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 331.79, y: -2.56, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 331.81, y: -2.666, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 121
@@ -34892,6 +36078,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2018163245
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018163240}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 949d820d87a39b648a687a6b2499d36c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2025187512
 GameObject:
   m_ObjectHideFlags: 0
@@ -35049,8 +36254,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050835506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 250.54, y: -2.94, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 250.55998, y: -3.03, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 81
@@ -35162,6 +36367,7 @@ GameObject:
   - component: {fileID: 2063681002}
   - component: {fileID: 2063681001}
   - component: {fileID: 2063681000}
+  - component: {fileID: 2063681003}
   m_Layer: 0
   m_Name: slime1 (21)
   m_TagString: Obstacle
@@ -35177,8 +36383,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063680998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 339.49, y: -3.01, z: 2.4455943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 339.5, y: -3.058, z: 2.4455943}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 123
@@ -35262,6 +36468,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2063681003
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063680998}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f03942909c24244597422167061b73b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2066673852
 GameObject:
   m_ObjectHideFlags: 0
@@ -35658,6 +36883,7 @@ GameObject:
   - component: {fileID: 2077577882}
   - component: {fileID: 2077577881}
   - component: {fileID: 2077577880}
+  - component: {fileID: 2077577883}
   m_Layer: 0
   m_Name: seagull1 (6)
   m_TagString: Obstacle
@@ -35796,6 +37022,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2077577883
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077577878}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2079675573
 GameObject:
   m_ObjectHideFlags: 0
@@ -35824,7 +37069,7 @@ Transform:
   m_GameObject: {fileID: 2079675573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 215.66, y: 0.63, z: 2.4455943}
-  m_LocalScale: {x: 0.40213376, y: 0.45834684, z: 0.6269935}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6269935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 65
@@ -35965,8 +37210,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088091378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 244.453, y: -2.497, z: 2.4455943}
-  m_LocalScale: {x: 0.31794935, y: 0.31794935, z: 0.31794935}
+  m_LocalPosition: {x: 244.49, y: -2.7, z: 2.4455943}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.31794935}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 79
@@ -37276,6 +38521,7 @@ GameObject:
   - component: {fileID: 2120545699}
   - component: {fileID: 2120545698}
   - component: {fileID: 2120545697}
+  - component: {fileID: 2120545700}
   m_Layer: 0
   m_Name: segull (5)
   m_TagString: Obstacle
@@ -37292,7 +38538,7 @@ Transform:
   m_GameObject: {fileID: 2120545695}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 87.43, y: -0.55, z: 2.4455943}
-  m_LocalScale: {x: 0.31930983, y: 0.3301266, z: 0.3625784}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.3625784}
   m_Children: []
   m_Father: {fileID: 2016153664}
   m_RootOrder: 27
@@ -37410,6 +38656,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2120545700
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120545695}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 177c702e7c7364b4599dfb550b6cb833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2130458316
 GameObject:
   m_ObjectHideFlags: 0
@@ -37698,10 +38963,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8549690553166181073, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553166181073, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8549690553166181074, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553202544000, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553202544000, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553202544000, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8549690553202544001, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
@@ -37713,10 +39003,60 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8549690553242052639, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553242052639, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553242052639, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.632
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553242052639, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.856
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553248757249, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553248757249, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8549690553248757250, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553397755368, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553397755368, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553397755368, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 42.823
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553397755368, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.907
       objectReference: {fileID: 0}
     - target: {fileID: 8549690553397755369, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
@@ -37788,20 +39128,85 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8549690553781254981, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553781254981, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553781254981, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 43.177
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553781254981, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.967
+      objectReference: {fileID: 0}
     - target: {fileID: 8549690553781254982, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553857224779, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553857224779, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8549690553857224788, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8549690553871494773, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553871494773, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553871494773, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 58.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690553871494773, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.05
+      objectReference: {fileID: 0}
     - target: {fileID: 8549690553871494774, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554012375140, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554012375140, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554012375140, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.03
       objectReference: {fileID: 0}
     - target: {fileID: 8549690554012375141, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
@@ -37813,6 +39218,36 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8549690554089026796, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554089026796, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554089026796, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.63383
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554089026796, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554127866632, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554127866632, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 8549690554127866633, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
@@ -37820,28 +39255,88 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8549690554342091848, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554342091848, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554342091848, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.47
+      value: 22.46
       objectReference: {fileID: 0}
     - target: {fileID: 8549690554342091848, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.96
+      value: -3.01
       objectReference: {fileID: 0}
     - target: {fileID: 8549690554342091850, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8549690554429803138, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554429803138, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554429803138, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.641
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554429803138, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.652
+      objectReference: {fileID: 0}
     - target: {fileID: 8549690554429803150, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8549690554494967556, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554494967556, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554494967556, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554494967556, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.02
+      objectReference: {fileID: 0}
     - target: {fileID: 8549690554494967557, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554666496779, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554666496779, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8549690554666496788, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
@@ -37850,18 +39345,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8549690554776405008, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554776405008, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554776405008, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.23
+      value: 52.59
       objectReference: {fileID: 0}
     - target: {fileID: 8549690554776405008, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.62
+      value: -2.82
       objectReference: {fileID: 0}
     - target: {fileID: 8549690554776405010, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554850081589, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554850081589, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8549690554850081590, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
@@ -37873,15 +39388,80 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8549690554903925551, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554903925551, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554903925551, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 43.069
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690554903925551, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.741
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690555035207171, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690555035207171, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8549690555035207180, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8549690555084455768, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690555084455768, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690555084455768, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 60.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690555084455768, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.07
+      objectReference: {fileID: 0}
     - target: {fileID: 8549690555084455769, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690555128168465, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690555128168465, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549690555128168465, guid: 067a6861c10264228ac318bdf004c046,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.02
       objectReference: {fileID: 0}
     - target: {fileID: 8549690555128168466, guid: 067a6861c10264228ac318bdf004c046,
         type: 3}
